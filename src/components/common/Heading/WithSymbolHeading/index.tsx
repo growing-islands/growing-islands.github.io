@@ -1,0 +1,1 @@
+export { WithSymbolHeading } from './WithSymbolHeading'

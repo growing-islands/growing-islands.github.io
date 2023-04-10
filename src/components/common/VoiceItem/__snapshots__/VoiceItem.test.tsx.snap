@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/common/VoiceItem Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+  >
+    <div>
+      <div>
+        <img
+          height="100"
+          layout="responsive"
+          placeholder="blur"
+          src="[object Object]"
+          width="100"
+        />
+      </div>
+    </div>
+    <div>
+      <h3
+        class=""
+        data-testid="component"
+      >
+        title
+      </h3>
+      <p
+        class=""
+        data-testid="component"
+      >
+        position
+      </p>
+      <p
+        class=""
+        data-testid="component"
+      >
+        description
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

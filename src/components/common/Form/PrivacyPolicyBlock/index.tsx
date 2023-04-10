@@ -1,0 +1,1 @@
+export { PrivacyPolicyBlock } from './PrivacyPolicyBlock'

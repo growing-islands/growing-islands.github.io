@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/contract-development/Voice Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    id="voice"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <div
+          class="hidden tablet:block"
+          data-testid="component"
+        >
+          <div
+            class=""
+          >
+            <div>
+              <span
+                translate="no"
+              >
+                Voice
+              </span>
+              <hr />
+              <span>
+                お客様の声
+              </span>
+            </div>
+          </div>
+        </div>
+        <header
+          data-aos="fade-up"
+        >
+          <h2>
+            お客様の声
+          </h2>
+        </header>
+        <ul>
+          <li
+            data-aos="fade-up"
+          >
+            <div
+              class=""
+            >
+              <div>
+                <div>
+                  <img
+                    layout="responsive"
+                    placeholder="blur"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3
+                  class=""
+                  data-testid="component"
+                >
+                  自社サービスを無駄なコストをかける事なく開発
+                </h3>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  有限会社スズキプリンティングサービス様
+自社サービス開発
+                </p>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  自社サービスの開発を依頼し、開発期間が1年と長期に渡る中、やはり要件の変更なども柔軟に対応できるユメラボさんの「共創する受託開発」で良かったと思える分岐がたくさんありました。開発開始までの期間も短く、月額の初期投資も抑えながら、必要な機能作成と検証を繰り返す事で、結果的に無駄なコストをかける事なく開発できたと感じています。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            data-aos="fade-up"
+          >
+            <div
+              class=""
+            >
+              <div>
+                <div>
+                  <img
+                    layout="responsive"
+                    placeholder="blur"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3
+                  class=""
+                  data-testid="component"
+                >
+                  プロジェクトの途中からでも柔軟に対応
+                </h3>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  人材サービス系企業様
+自社サービス開発
+                </p>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  自社のSaaSに関して開発途中から参画頂きました。
+市場を取り巻く環境が変わる中、月額制の顧問契約で開発の要件変更にも対応いただき、インフラからフロントまで幅広く対応いただきました。
+週に1回の定例ミーティングで進捗のすり合わせを行い、ディレクターの方に柔軟な対応を頂いたのが特に印象的です。
+公開後もPDCAを回しながら、マーケティングの観点からも様々な相談ができるので、とても心強いと感じています。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            data-aos="fade-up"
+          >
+            <div
+              class=""
+            >
+              <div>
+                <div>
+                  <img
+                    layout="responsive"
+                    placeholder="blur"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3
+                  class=""
+                  data-testid="component"
+                >
+                  定額制でDXの第一歩からサポート
+                </h3>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  食品系メーカー様
+社内システム開発
+                </p>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  社内で使うシステムの構築を依頼しました。
+別の会社に見積もりを取った際、最終的に一括でまとまった金額が必要との話になり難しい判断を迫られていた所、月額制で対応していただけるユメラボさんにお話を聞ける機会がありました。
+毎月定額で契約できる所が予算を取りやすく、また、オフショア開発との事で満足できる価格感で進んでおります。
+内容的も定例の際に丁寧な対応を頂き、スケジュール通り機能ができて行くので安心しています。
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

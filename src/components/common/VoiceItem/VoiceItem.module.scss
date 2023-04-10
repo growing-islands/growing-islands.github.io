@@ -1,0 +1,141 @@
+.component {
+  $this: #{&};
+
+  @include mq() {
+    display: flex;
+  }
+
+  &.is-reverse {
+    @include mq() {
+      flex-direction: row-reverse;
+    }
+
+    #{$this} {
+      &__head {
+        @include mq() {
+          margin-right: 0;
+          margin-left: 39px;
+        }
+      }
+    }
+  }
+
+  &__head {
+    width: mod_vw(290);
+    height: mod_vw(290);
+    margin: 0 auto;
+    padding: mod_vw(10);
+    overflow: hidden;
+    background-image: linear-gradient(
+      to bottom,
+      map-get($palette, 'deepblue'),
+      map-get($palette, 'emeraldgreen'),
+      map-get($palette, 'pastelgreen')
+    );
+    border-radius: 50%;
+
+    @include mq() {
+      width: 290px;
+      height: 290px;
+      padding: 10px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(54);
+
+      @include mq() {
+        margin-right: 39px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: map-get($palette, 'white');
+    border-radius: 50%;
+  }
+
+  &__body {
+    @include mq() {
+      flex: 1;
+    }
+  }
+
+  &__title {
+    @include typo(30, 48, 30, 48);
+
+    position: relative;
+    margin-bottom: mod_vw(16);
+    padding-bottom: mod_vw(21);
+    color: map-get($palette, 'deepblue');
+    font-weight: 400;
+    white-space: pre-wrap;
+    text-align: center;
+
+    @include mq() {
+      margin-bottom: 13px;
+      padding-bottom: 4px;
+      text-align: left;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: mod_vw(80);
+      height: mod_vw(2);
+      background-image: linear-gradient(
+        to right,
+        map-get($palette, 'deepblue'),
+        map-get($palette, 'emeraldgreen'),
+        map-get($palette, 'pastelgreen')
+      );
+      transform: translateX(-50%);
+      content: '';
+
+      @include mq() {
+        width: 100%;
+        height: 2px;
+      }
+    }
+  }
+
+  &__position {
+    @include typo(20, 32, 18, 32);
+
+    color: map-get($palette, 'deepblue');
+    font-weight: 400;
+    white-space: pre-wrap;
+    text-align: center;
+
+    @include mq() {
+      text-align: left;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(16);
+
+      @include mq() {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  &__description {
+    @include typo(20, 32, 18, 32);
+
+    padding: 0 mod_vw(30);
+    color: map-get($palette, 'deepblue');
+    font-weight: 400;
+    letter-spacing: 0.08rem;
+    white-space: pre-wrap;
+
+    @include mq() {
+      padding: 0;
+      letter-spacing: 0.1rem;
+    }
+  }
+}

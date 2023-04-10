@@ -1,0 +1,1 @@
+export { GetEllipsisString } from './GetEllipsisString'

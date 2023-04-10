@@ -1,0 +1,34 @@
+.component {
+  width: 100%;
+  height: mod_vw(300);
+  margin: 0 auto;
+  overflow-y: scroll;
+  background-color: map-get($palette, 'white');
+
+  @include mq() {
+    width: 59.36%;
+    height: 300px;
+  }
+
+  &__inner {
+    padding: mod_vw(25);
+
+    @include mq() {
+      padding: 25px;
+    }
+  }
+
+  &__text {
+    @include typo(20, 40, 16, 30);
+
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(40);
+
+      @include mq() {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

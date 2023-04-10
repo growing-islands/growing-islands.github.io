@@ -1,0 +1,17 @@
+.component {
+  // 配置に関する初期値
+  // コンテンツによって分ける場合は都度上書く
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: fit-content;
+
+  &.is-fixed {
+    position: fixed !important;
+  }
+
+  &.is-end {
+    position: absolute !important;
+  }
+}

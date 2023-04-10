@@ -1,0 +1,118 @@
+.component {
+  position: relative;
+  padding: mod_vw(73) 0 mod_vw(100);
+  overflow: hidden;
+
+  @include mq() {
+    padding: 140px 0 240px;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__header {
+    &:not(:last-child) {
+      margin-bottom: mod_vw(60);
+
+      @include mq() {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__column-header {
+    @include mq() {
+      top: 0;
+    }
+  }
+
+  &__map {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+
+    @include mq() {
+      padding-top: 35.94%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(40);
+
+      @include mq() {
+        margin-bottom: 37px;
+      }
+    }
+  }
+
+  &__list {
+    @include mq() {
+      width: min(100%, 1144px);
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    border: none;
+    border-top: mod_vw(2) solid map-get($palette, 'lightgray');
+
+    @include mq() {
+      border-width: 1px;
+    }
+  }
+}
+
+.item {
+  $item: #{&};
+
+  color: map-get($palette, 'deepblue');
+
+  @include mq() {
+    display: flex;
+  }
+
+  &__label {
+    @include typo(24, 60, 24, 60);
+
+    font-weight: 400;
+
+    @include mq() {
+      width: 200px;
+    }
+  }
+
+  &__body {
+    @include typo(32, 40, 24, 60);
+
+    padding: mod_vw(6) 0;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+
+    @include mq() {
+      width: calc(100% - 200px);
+      padding: 6px 0;
+    }
+  }
+
+  &:last-child {
+    #{$item} {
+      &__body {
+        padding-bottom: 0;
+
+        @include mq() {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

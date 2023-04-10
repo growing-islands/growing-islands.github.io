@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/error/Container Snapshot on 404 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    data-testid="component"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <header>
+          <h1>
+            404
+Not Found
+          </h1>
+        </header>
+        <div>
+          <p>
+            お探しのページが見つかりません。
+URLをご確認ください。
+          </p>
+          <div>
+            <a
+              class=""
+              data-testid="button"
+            >
+              <span>
+                TOPページ
+              </span>
+              <span />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`components/error/Container Snapshot on 500 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    data-testid="component"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <header>
+          <h1>
+            Server Error
+          </h1>
+        </header>
+        <div>
+          <p>
+            サーバーエラーが発生いたしました。
+恐れ入りますが時間をおいて再度アクセスしてください。
+          </p>
+          <div>
+            <a
+              class=""
+              data-testid="button"
+            >
+              <span>
+                TOPページ
+              </span>
+              <span />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`components/error/Container Snapshot on other 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    data-testid="component"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <header>
+          <h1>
+            Error
+          </h1>
+        </header>
+        <div>
+          <p>
+            エラーが発生いたしました。
+恐れ入りますが時間をおいて再度アクセスしてください。
+          </p>
+          <div>
+            <a
+              class=""
+              data-testid="button"
+            >
+              <span>
+                TOPページ
+              </span>
+              <span />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

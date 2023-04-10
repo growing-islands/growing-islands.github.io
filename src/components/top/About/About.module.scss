@@ -1,0 +1,361 @@
+.component {
+  padding: mod_vw(96) 0 mod_vw(100);
+
+  @include mq() {
+    padding: 60px 0 200px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__text {
+    @include typo(24, 72, 24, 72);
+
+    color: map-get($palette, 'white');
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-align: center;
+
+    @include mq() {
+      text-align: left;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(100);
+
+      @include mq() {
+        margin-bottom: 153px;
+      }
+    }
+  }
+
+  &__list {
+    @include mq() {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: mod_vw(364);
+    height: mod_vw(364);
+    margin: 0 auto;
+
+    @include mq() {
+      width: 28.47%;
+      height: 0;
+      margin: 0;
+      padding-top: 28.47%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(94);
+
+      @include mq() {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.item {
+  $item: #{&};
+
+  background-color: map-get($palette, 'gray');
+  border-radius: 50%;
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: mod_vw(324);
+    height: mod_vw(324);
+    padding-top: mod_vw(86);
+    overflow: hidden;
+    text-align: center;
+    background-color: map-get($palette, 'white');
+    border-radius: 50%;
+
+    @include mq() {
+      position: absolute;
+      top: 5.49%;
+      left: 5.49%;
+      width: 89.02%;
+      height: 89.02%;
+      padding-top: 28.27%;
+    }
+  }
+
+  &__name {
+    color: map-get($palette, 'black');
+    font-weight: 400;
+    font-size: mod_vw(39);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+
+    @include mq() {
+      font-size: min(2.04vw, 39px);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(13);
+
+      @include mq() {
+        margin-bottom: 4%;
+      }
+    }
+  }
+
+  &__description {
+    color: map-get($palette, 'black');
+    font-weight: 400;
+    font-size: mod_vw(18);
+    line-height: 1;
+
+    @include mq() {
+      font-size: min(0.9vw, 18px);
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+  }
+
+  &__decoration {
+    position: absolute;
+    z-index: 0;
+    width: mod_vw(30);
+    background-color: inherit;
+    border-radius: mod_vw(40);
+
+    @include mq() {
+      top: 50%;
+      width: 126%;
+      height: 8.3%;
+      border-radius: 20px;
+    }
+  }
+
+  &:nth-child(1) {
+    $color: map-get($palette, 'deepgray');
+
+    background-color: #{$color};
+
+    #{$item} {
+      &__image {
+        width: mod_vw(108);
+        margin-top: mod_vw(25);
+
+        @include mq() {
+          width: 33.23%;
+          margin-top: 7.7%;
+        }
+      }
+
+      &__decoration {
+        &:nth-child(1) {
+          right: mod_vw(124);
+          bottom: mod_vw(-25);
+          height: mod_vw(107);
+
+          @include mq() {
+            right: -8%;
+            bottom: auto;
+            width: 100%;
+            height: 8.3%;
+            transform: translateY(-180%);
+          }
+        }
+
+        &:nth-child(2) {
+          bottom: mod_vw(-54);
+          left: 50%;
+          height: mod_vw(107);
+          transform: translateX(-50%);
+
+          @include mq() {
+            right: -16%;
+            bottom: auto;
+            left: auto;
+            width: 100%;
+            height: 8.3%;
+            transform: translateY(-50%);
+          }
+        }
+
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    $color: map-get($palette, 'vividgreen');
+
+    background-color: #{$color};
+
+    #{$item} {
+      &__image {
+        width: mod_vw(124);
+        margin-top: mod_vw(21);
+
+        @include mq() {
+          width: 38.15%;
+          margin-top: 6.46%;
+        }
+      }
+
+      &__decoration {
+        &:nth-child(1) {
+          top: mod_vw(-53);
+          right: mod_vw(124);
+          height: mod_vw(107);
+
+          @include mq() {
+            top: 50%;
+            right: 50%;
+            width: 63%;
+            height: 8.3%;
+            transform: translateY(-180%);
+          }
+        }
+
+        &:nth-child(2) {
+          top: mod_vw(-25);
+          left: 50%;
+          height: mod_vw(444);
+          transform: translateX(-50%);
+
+          @include mq() {
+            top: 50%;
+            left: -8%;
+            width: 124%;
+            height: 8.3%;
+            transform: translateY(-50%);
+          }
+        }
+
+        &:nth-child(3) {
+          top: mod_vw(-44);
+          left: mod_vw(127);
+          height: mod_vw(429);
+
+          @include mq() {
+            top: 50%;
+            left: -10%;
+            width: 116%;
+            height: 8.3%;
+            transform: translateY(80%);
+          }
+
+          &::before {
+            position: absolute;
+            top: -10%;
+            left: 0;
+            width: 100%;
+            height: 7%;
+            background-color: inherit;
+            border-radius: 50%;
+            content: '';
+
+            @include mq() {
+              top: 0;
+              left: -10%;
+              width: 7%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    $color: map-get($palette, 'yellow');
+
+    background-color: #{$color};
+
+    #{$item} {
+      &__image {
+        width: mod_vw(144);
+        margin-top: mod_vw(16);
+
+        @include mq() {
+          width: 44.31%;
+          margin-top: 4.92%;
+        }
+      }
+
+      &__decoration {
+        &:nth-child(1) {
+          top: mod_vw(-54);
+          right: mod_vw(124);
+          height: mod_vw(107);
+
+          @include mq() {
+            top: 50%;
+            left: -10%;
+            width: 100%;
+            height: 8.3%;
+            transform: translateY(-180%);
+          }
+
+          &::before {
+            position: absolute;
+            top: -35%;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-color: inherit;
+            border-radius: 50%;
+            content: '';
+
+            @include mq() {
+              top: 0;
+              left: -12%;
+              width: 8%;
+              height: 100%;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          top: mod_vw(-16);
+          left: 50%;
+          height: mod_vw(107);
+          transform: translateX(-50%);
+
+          @include mq() {
+            top: 50%;
+            left: -5%;
+            width: 100%;
+            height: 8.3%;
+            transform: translateY(-50%);
+          }
+        }
+
+        &:nth-child(3) {
+          top: mod_vw(-49);
+          left: mod_vw(127);
+          height: mod_vw(107);
+
+          @include mq() {
+            top: 50%;
+            right: 50%;
+            left: auto;
+            width: 63%;
+            height: 8.3%;
+            transform: translateY(80%);
+          }
+        }
+      }
+    }
+  }
+}

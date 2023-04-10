@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+/* =========================================
+
+| mixins
+
+========================================= */
+@mixin typo($sp-font-size, $sp-line-height, $pc-font-size, $pc-line-height) {
+  font-size: mod_vw($sp-font-size);
+  line-height: math.div($sp-line-height, $sp-font-size);
+
+  @if $pc-font-size and $pc-line-height {
+    @include mq() {
+      font-size: #{$pc-font-size * 0.1}rem;
+      line-height: math.div($pc-line-height, $pc-font-size);
+    }
+  }
+}

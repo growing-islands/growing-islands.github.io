@@ -1,0 +1,250 @@
+.component {
+  position: relative;
+  padding: mod_vw(74) 0 0;
+
+  @include mq() {
+    padding: 116px 0 0;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: mod_vw(210);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(map-get($palette, 'dirtyblue'), 0),
+      rgba(map-get($palette, 'dirtyblue'), 0.3)
+    );
+    mix-blend-mode: multiply;
+    content: '';
+
+    @include mq() {
+      height: 210px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__column-header {
+    @include mq() {
+      top: 19px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(46);
+
+      @include mq() {
+        margin-bottom: 62px;
+      }
+    }
+  }
+
+  &__title {
+    @include typo(42, 52, 48, 60);
+
+    color: map-get($palette, 'white');
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(22);
+
+      @include mq() {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__sub-title {
+    @include typo(24, 48, 24, 48);
+
+    color: map-get($palette, 'white');
+    letter-spacing: 0.2rem;
+  }
+
+  &__contents {
+    @include mq() {
+      display: flex;
+    }
+  }
+
+  &__item {
+    flex: 1;
+  }
+}
+
+.item {
+  $item: #{&};
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:nth-child(odd) {
+    #{$item} {
+      &__person {
+        flex-direction: row;
+        transform: translateX(#{calc(-35 / 375 * 100vw)});
+
+        @include mq() {
+          flex-direction: row-reverse;
+          transform: none;
+        }
+      }
+    }
+  }
+
+  &__person {
+    transform: translateX(#{calc(35 / 375 * 100vw)});
+
+    @include mq() {
+      transform: none;
+    }
+  }
+
+  &:nth-child(1) {
+    .person {
+      margin-top: mod_vw(-130);
+
+      @include mq() {
+        height: 660px;
+        margin-top: -100px;
+      }
+
+      &__image {
+        width: mod_vw(387 + 40);
+
+        @include mq() {
+          right: 171px;
+          width: 661px;
+        }
+      }
+
+      &__name {
+        margin-left: mod_vw(54);
+
+        @include mq() {
+          width: auto;
+          margin-right: 70px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    margin-top: mod_vw(-22);
+
+    @include mq() {
+      margin-top: 0;
+    }
+
+    .person {
+      margin-top: mod_vw(-160);
+
+      @include mq() {
+        height: 670px;
+        margin-top: -100px;
+      }
+
+      &__image {
+        width: mod_vw(390 + 13);
+
+        @include mq() {
+          left: 134px;
+          width: 636px;
+        }
+      }
+
+      &__name {
+        margin-right: mod_vw(120);
+
+        @include mq() {
+          margin-right: 0;
+          margin-left: 152px;
+        }
+      }
+    }
+
+    .balloon {
+      &__image {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
+
+.balloon {
+  position: relative;
+  width: mod_vw(675);
+
+  @include mq() {
+    width: auto;
+    max-width: 516px;
+  }
+
+  &__list {
+    position: absolute;
+    top: #{calc((100% - mod_vw(67)) / 2)};
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%, -55%);
+
+    @include mq() {
+      top: calc((100% - 53px) / 2);
+      left: 33px;
+      transform: translateY(-55%);
+    }
+  }
+
+  &__text {
+    color: map-get($palette, 'deepblue');
+    font-size: #{min(mod_vw(24), 20px)};
+    line-height: 1.75;
+
+    @include mq() {
+      font-size: clamp(12px, 1vw, 18px);
+      line-height: 1.7;
+    }
+  }
+}
+
+.person {
+  $person: #{&};
+
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+
+  @include mq() {
+    flex-direction: row;
+  }
+
+  &__image {
+    @include mq() {
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  &__name {
+    @include typo(32, 48, 32, 48);
+
+    display: flex;
+    align-items: center;
+    color: map-get($palette, 'white');
+    font-weight: 400;
+    word-break: keep-all;
+  }
+}

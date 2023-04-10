@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/contract-development/Trouble Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    id="trouble"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <div
+          class="hidden tablet:block"
+          data-testid="component"
+        >
+          <div
+            class=""
+          >
+            <div>
+              <span
+                translate="no"
+              >
+                Trouble
+              </span>
+              <hr />
+              <span>
+                このような事でお困りではありませんか？
+              </span>
+            </div>
+          </div>
+        </div>
+        <header
+          data-aos="fade-up"
+        >
+          <h2
+            class=""
+            data-testid="component"
+          >
+            このような事で
+            <br
+              class="tablet:hidden"
+            />
+            お困りではありませんか？
+          </h2>
+          <p
+            class=""
+            data-testid="component"
+          >
+            システム開発におけるよくある問題
+          </p>
+        </header>
+        <div
+          data-aos="fade-up"
+        >
+          <div
+            class="tablet:hidden"
+          >
+            <img
+              alt="低予算でスタートしたい、新規事業を立ち上げたいがエンジニアがいない、物はできたものの事業が立ち上がらない、採用したいがどんな人材を雇えば良いのかわからない、システム担当のエンジニアが退職してブラックボックスになった、途中で仕様を変えたくなっても追加料金を請求される、開発会社と突然連絡が取れなくなった"
+              height="1098"
+              layout="responsive"
+              placeholder="blur"
+              src="test-file-stub"
+              width="705"
+            />
+          </div>
+          <div
+            class="hidden tablet:block"
+          >
+            <img
+              alt="低予算でスタートしたい、新規事業を立ち上げたいがエンジニアがいない、物はできたものの事業が立ち上がらない、採用したいがどんな人材を雇えば良いのかわからない、システム担当のエンジニアが退職してブラックボックスになった、途中で仕様を変えたくなっても追加料金を請求される、開発会社と突然連絡が取れなくなった"
+              height="1198"
+              layout="responsive"
+              placeholder="blur"
+              src="test-file-stub"
+              width="1264"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

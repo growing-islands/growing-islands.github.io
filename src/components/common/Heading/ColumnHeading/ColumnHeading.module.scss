@@ -1,0 +1,60 @@
+.component {
+  $this: #{&};
+
+  color: var(--text-color);
+
+  &.is-active {
+    #{$this} {
+      &__border {
+        transform: translateY(50%) scaleX(1);
+      }
+    }
+  }
+
+  &__inner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg) translateY(-100%);
+    transform-origin: left top;
+  }
+
+  &__english {
+    @include typo(20, 20, 20, 20);
+
+    display: block;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+    &:not(:last-child) {
+      @include mq() {
+        margin-right: 19px;
+      }
+    }
+  }
+
+  &__border {
+    display: block;
+    color: var(--border-color);
+    transform: translateY(50%) scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.5s ease 0s;
+
+    @include mq() {
+      width: 60px;
+      height: 1px;
+    }
+
+    &:not(:last-child) {
+      @include mq() {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__japanese {
+    @include typo(20, 20, 16, 16);
+
+    font-weight: 400;
+  }
+}

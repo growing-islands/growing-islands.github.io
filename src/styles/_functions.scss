@@ -1,0 +1,5 @@
+@use 'sass:math';
+
+@function mod_vw($val, $vw: 768) {
+  @return math.div($val, $vw) * 100vw;
+}

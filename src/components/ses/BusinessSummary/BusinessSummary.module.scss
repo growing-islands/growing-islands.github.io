@@ -1,0 +1,41 @@
+.component {
+  padding: mod_vw(23) 0 mod_vw(74);
+
+  @include mq() {
+    padding: 128px 0 116px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__column-header {
+    @include mq() {
+      top: 26px;
+    }
+  }
+
+  &__title {
+    @include typo(42, 90, 48, 90);
+
+    color: map-get($palette, 'white');
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(4);
+
+      @include mq() {
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  &__text {
+    @include typo(24, 48, 24, 48);
+
+    color: map-get($palette, 'white');
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+}

@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/common/SEO Snapshot 1`] = `
+<DocumentFragment>
+  <title
+    data-testid="title"
+  >
+    test title｜株式会社ユメラボ
+  </title>
+  <meta
+    content="initial-scale=1.0, width=device-width"
+    name="viewport"
+  />
+  <link
+    href="/favicon/favicon.ico"
+    rel="shortcut icon"
+  />
+  <link
+    href="/favicon/favicon-32x32.png"
+    rel="icon"
+    sizes="32x32"
+    type="image/png"
+  />
+  <link
+    href="/favicon/favicon-16x16.png"
+    rel="icon"
+    sizes="16x16"
+    type="image/png"
+  />
+  <link
+    href="/favicon/apple-touch-icon.png"
+    rel="apple-touch-icon"
+    type="image/png"
+  />
+  <link
+    href="/favicon/android-chrome-192x192.png"
+    rel="icon"
+    sizes="192x192"
+    type="image/png"
+  />
+  <link
+    href="/favicon/android-chrome-512x512.png"
+    rel="icon"
+    sizes="512x512"
+    type="image/png"
+  />
+  <meta
+    content="/favicon/mstile-150×150.png"
+    name="msapplication-TileImage"
+  />
+  <meta
+    content="#1e2888"
+    name="theme-color"
+  />
+  <meta
+    content="株式会社ユメラボは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
+    data-testid="description"
+    name="description"
+  />
+  <meta
+    content="test title｜株式会社ユメラボ"
+    data-testid="ogTitle"
+    property="og:title"
+  />
+  <meta
+    content="株式会社ユメラボは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
+    data-testid="ogDescription"
+    property="og:description"
+  />
+  <meta
+    content="website"
+    data-testid="ogType"
+    property="og:type"
+  />
+  <meta
+    content=""
+    data-testid="ogUrl"
+    property="og:url"
+  />
+  <meta
+    content="/OGP.png"
+    data-testid="ogImage"
+    property="og:image"
+  />
+  <meta
+    content="test title｜株式会社ユメラボ"
+    data-testid="ogSiteName"
+    property="og:site_name"
+  />
+  <meta
+    content="summary_large_image"
+    data-testid="twitterCard"
+    name="twitter:card"
+  />
+  <meta
+    content="@yumelab1214"
+    data-testid="twitterSite"
+    name="twitter:site"
+  />
+</DocumentFragment>
+`;

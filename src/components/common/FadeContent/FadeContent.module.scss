@@ -1,0 +1,35 @@
+.component {
+  display: inline-block;
+  visibility: hidden;
+  opacity: 0;
+
+  &.is-visible {
+    animation: fadein 0.25s ease 0s forwards;
+  }
+
+  &.is-hidden {
+    animation: fadeout 0.25s ease 0s forwards;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

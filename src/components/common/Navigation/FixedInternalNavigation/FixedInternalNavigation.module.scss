@@ -1,0 +1,55 @@
+.side-navigation {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: mod_vw(15) mod_vw(40);
+  overflow-x: scroll;
+  background-color: map-get($palette, 'white');
+
+  @include mq() {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  li {
+    &:not(:last-child) {
+      @include mq() {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__link {
+    @include typo(24, 51, 14, 25);
+
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: mod_vw(26) mod_vw(20);
+    color: map-get($colors, 'text');
+    word-break: keep-all;
+    transition: background, color 0.25s ease 0s;
+
+    @include mq() {
+      padding: 4px 10px;
+    }
+
+    &:hover {
+      @include mq() {
+        color: #fff;
+        background-color: map-get($colors, 'base');
+      }
+    }
+
+    &.is-active {
+      color: #fff;
+      background-color: map-get($colors, 'base');
+    }
+  }
+}

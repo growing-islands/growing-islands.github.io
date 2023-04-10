@@ -1,0 +1,32 @@
+/*
+
+Reset CSS for MakeLP
+
+*/
+html,
+body {
+  min-width: map-get($mq-breakpoints, 'mobile');
+  font-size: 62.5%;
+  scrollbar-width: thin;
+  scrollbar-color: #4444, #ccc;
+}
+
+body {
+  width: 100%;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, YuGothic,
+    'Yu Gothic', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', Verdana,
+    Meiryo, sans-serif;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+  background-image: linear-gradient(
+    170deg,
+    map-get($palette, 'deepblue') 0%,
+    map-get($palette, 'emeraldgreen') 20%,
+    map-get($palette, 'white') 40%,
+    map-get($palette, 'white') 60%,
+    map-get($palette, 'pastelgreen') 100%
+  );
+}

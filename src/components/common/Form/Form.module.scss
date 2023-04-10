@@ -1,0 +1,343 @@
+.component {
+  display: block;
+
+  &__item {
+    @include mq() {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(40);
+
+      @include mq() {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__contents {
+    @include mq() {
+      padding-right: 13.67%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(50);
+
+      @include mq() {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__policy-check {
+    &:not(:last-child) {
+      margin-bottom: mod_vw(40);
+
+      @include mq() {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__button {
+    width: mod_vw(420);
+
+    @include mq() {
+      width: 400px;
+    }
+
+    & > span {
+      @include typo(24, 24, 20, 20);
+    }
+  }
+
+  &__re-captcha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > .item {
+      &__error {
+        margin-top: 10px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(60);
+
+      @include mq() {
+        margin-bottom: 62px;
+      }
+    }
+  }
+
+  &__privacy-policy {
+    @include mq() {
+      margin: 0 13.67% 0 auto;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(40);
+
+      @include mq() {
+        margin-bottom: 37px;
+      }
+    }
+  }
+}
+
+.item {
+  &__head {
+    display: block;
+    text-align: left;
+
+    @include mq() {
+      display: flex;
+      flex: 1;
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+
+      @include mq() {
+        margin-right: 28px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__label {
+    @include typo(24, 32, 20, 32);
+
+    color: map-get($palette, 'deepblue');
+    font-weight: 400;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      margin-right: mod_vw(18);
+
+      @include mq() {
+        margin-right: 15px;
+      }
+    }
+
+    &:only-child {
+      @include mq() {
+        margin-right: 72px;
+      }
+    }
+  }
+
+  &__required {
+    @include typo(20, 20, 16, 32);
+
+    padding: 0 mod_vw(8);
+    color: map-get($palette, 'red');
+    font-weight: 400;
+    white-space: nowrap;
+    background-color: map-get($palette, 'white');
+    border: 1px solid map-get($palette, 'red');
+
+    @include mq() {
+      padding: 0 13px;
+    }
+  }
+
+  &__body {
+    text-align: left;
+
+    @include mq() {
+      width: 68.64%;
+      min-width: 68.64%;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+  }
+
+  &__select-wrap {
+    position: relative;
+    width: 59.26%;
+
+    @include mq() {
+      width: 52.63%;
+      min-width: 280px;
+    }
+  }
+
+  &__select-icon {
+    position: absolute;
+    top: 50%;
+    right: mod_vw(20);
+    display: block;
+    width: mod_vw(20);
+    height: mod_vw(20);
+    border-right: 1px solid map-get($palette, 'lightblack');
+    border-bottom: 1px solid map-get($palette, 'lightblack');
+    transform: translateY(-75%) rotate(45deg);
+
+    @include mq() {
+      right: 19px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    @include typo(24, 24, 16, 24);
+
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: mod_vw(23) mod_vw(26);
+    line-height: 1.5;
+    text-align: left;
+    background-color: map-get($palette, 'white');
+
+    &:focus {
+      outline: 2px solid map-get($palette, 'mintblue');
+    }
+
+    @include mq() {
+      padding: 13px 25px;
+    }
+  }
+
+  select {
+    cursor: pointer;
+    appearance: none;
+  }
+
+  textarea {
+    height: mod_vw(300);
+    resize: none;
+
+    @include mq() {
+      height: 300px;
+    }
+  }
+
+  &__error {
+    @include typo(28, 28, 14, 14);
+
+    display: inline-block;
+    margin-top: mod_vw(5);
+    color: map-get($palette, 'red');
+
+    @include mq() {
+      margin-top: 5px;
+    }
+  }
+}
+
+.policy-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  input[type='checkbox'] {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background-color: map-get($palette, 'white');
+    cursor: pointer;
+    appearance: none;
+
+    @include mq() {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:focus {
+      border-color: transparent;
+      outline: 1px solid map-get($palette, 'mintblue');
+    }
+
+    &:not(:last-child) {
+      margin-right: 5px;
+
+      @include mq() {
+        margin-right: 22px;
+      }
+    }
+
+    &:checked {
+      &::after {
+        content: '';
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 12px;
+      border-right: 2px solid black;
+      border-bottom: 2px solid black;
+      transform: translate(-50%, -50%) rotate(45deg);
+
+      @include mq() {
+        width: 10px;
+        height: 24px;
+        border-right: 3px solid map-get($palette, 'black');
+        border-bottom: 3px solid map-get($palette, 'black');
+      }
+    }
+  }
+
+  &__label {
+    @include typo(20, 20, 20, 20);
+
+    color: map-get($palette, 'deepblue');
+    font-weight: 400;
+    cursor: pointer;
+
+    a {
+      color: map-get($palette, 'mintblue');
+      text-decoration: underline;
+
+      &:hover {
+        @include mq() {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#fff, 0.8);
+
+  &__icon {
+    width: mod_vw(200);
+
+    @include mq() {
+      width: 500px;
+    }
+  }
+}

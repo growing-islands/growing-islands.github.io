@@ -1,0 +1,48 @@
+.component {
+  padding: mod_vw(167) 0 mod_vw(153);
+  background-color: rgba(map-get($palette, 'deepblue'), 0.05);
+
+  @include mq() {
+    padding: 143px 0 125px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__column-header {
+    @include mq() {
+      top: 41px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(80);
+
+      @include mq() {
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  &__title {
+    @include typo(42, 52, 48, 90);
+
+    color: map-get($palette, 'deepblue');
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: mod_vw(60);
+
+      @include mq() {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
