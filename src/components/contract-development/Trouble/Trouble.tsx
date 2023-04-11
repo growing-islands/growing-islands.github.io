@@ -1,4 +1,4 @@
-import { default as Image } from 'next/image'
+import { Image } from '~components/common/Image'
 import { default as classnames } from 'classnames'
 
 // components
@@ -57,7 +57,6 @@ export const Trouble: React.FCX = (props) => {
                 src={ImageTroubleSp}
                 width={705}
                 height={1098}
-                layout="responsive"
                 placeholder="blur"
                 alt="低予算でスタートしたい、新規事業を立ち上げたいがエンジニアがいない、物はできたものの事業が立ち上がらない、採用したいがどんな人材を雇えば良いのかわからない、システム担当のエンジニアが退職してブラックボックスになった、途中で仕様を変えたくなっても追加料金を請求される、開発会社と突然連絡が取れなくなった"
               />
@@ -72,7 +71,6 @@ export const Trouble: React.FCX = (props) => {
                 src={ImageTroublePc}
                 width={1264}
                 height={1198}
-                layout="responsive"
                 placeholder="blur"
                 alt="低予算でスタートしたい、新規事業を立ち上げたいがエンジニアがいない、物はできたものの事業が立ち上がらない、採用したいがどんな人材を雇えば良いのかわからない、システム担当のエンジニアが退職してブラックボックスになった、途中で仕様を変えたくなっても追加料金を請求される、開発会社と突然連絡が取れなくなった"
               />

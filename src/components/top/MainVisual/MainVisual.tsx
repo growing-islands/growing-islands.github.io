@@ -1,4 +1,4 @@
-import { default as Image } from 'next/image'
+import { Image } from '~components/common/Image'
 import { default as classnames } from 'classnames'
 
 // scss

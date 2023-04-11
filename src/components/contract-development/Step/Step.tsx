@@ -1,5 +1,4 @@
-import { default as Image } from 'next/image'
-import type { ImageProps } from 'next/image'
+import { Image } from '~components/common/Image'
 import { default as classnames } from 'classnames'
 
 // components
@@ -85,7 +84,7 @@ export const Step: React.FCX = (props) => {
             {LIST_ITEMS.map((item, index) => {
               const { title, image, text, attention } = item
 
-              const imageOptions: Partial<ImageProps> = {
+              const imageOptions: Partial<any> = {
                 placeholder: 'blur',
               }
 

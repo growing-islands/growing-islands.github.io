@@ -1,5 +1,5 @@
 import { default as classnames } from 'classnames'
-import { default as Image } from 'next/image'
+import { Image } from '~components/common/Image'
 
 // components
 import { LineBreakText } from '~components/common/LineBreakText'
@@ -41,9 +41,7 @@ export const VoiceItem: React.FCX<Props> = (props) => {
     >
       <div className={styles['component__head']}>
         <div className={styles['component__image']}>
-          {image && (
-            <Image {...{ ...image }} placeholder="blur" layout="responsive" />
-          )}
+          {image && <Image {...{ ...image }} placeholder="blur" />}
         </div>
       </div>
       <div className={styles['component__body']}>

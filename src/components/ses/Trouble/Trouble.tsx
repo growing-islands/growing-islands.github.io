@@ -1,4 +1,4 @@
-import { default as Image } from 'next/image'
+import { Image } from '~components/common/Image'
 import { default as classnames } from 'classnames'
 
 // components
@@ -61,7 +61,6 @@ export const Trouble: React.FCX = (props) => {
                   width={542}
                   height={274}
                   placeholder="blur"
-                  layout="responsive"
                 />
                 <ul className={styles['balloon__list']}>
                   <li className={styles['balloon__text']}>

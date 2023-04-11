@@ -1,4 +1,4 @@
-import { default as Image } from 'next/image'
+import { Image } from '~components/common/Image'
 import { default as classnames } from 'classnames'
 
 // components
@@ -55,7 +55,6 @@ export const BusinessSummary: React.FCX = (props) => {
             src={ImageFlowSp}
             width={750}
             height={880}
-            layout="responsive"
             placeholder="blur"
             alt="事業概要フロー図"
           />
@@ -70,7 +69,6 @@ export const BusinessSummary: React.FCX = (props) => {
             src={ImageFlowPc}
             width={1920}
             height={1681}
-            layout="responsive"
             placeholder="blur"
             alt="事業概要フロー図"
           />

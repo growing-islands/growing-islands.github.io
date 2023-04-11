@@ -1,9 +1,9 @@
 type Props = {
-  placeholder: string
+  placeholder?: string
   src: StaticImageData
-  alt: string
-  width: number
-  height: number
+  alt?: string
+  width?: number | string
+  height?: number | string
 }
 
 export const Image: React.FCX<Props> = (props: Props) => {

@@ -1,5 +1,5 @@
 import { default as classnames } from 'classnames'
-import { default as Image } from 'next/image'
+import { Image } from '~components/common/Image'
 import { Autoplay, Navigation, Pagination } from 'swiper'
 import type { SwiperOptions } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -109,11 +109,7 @@ export const CaseStudy: React.FCX = (props) => {
                   return (
                     <SwiperSlide key={`${alt}-${index}`}>
                       <div className={styles['slider__item']}>
-                        <Image
-                          {...{ ...image }}
-                          layout="responsive"
-                          placeholder="blur"
-                        />
+                        <Image {...{ ...image }} placeholder="blur" />
                       </div>
                     </SwiperSlide>
                   )

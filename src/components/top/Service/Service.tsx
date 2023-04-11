@@ -1,4 +1,4 @@
-import { default as Image } from 'next/image'
+import { Image } from '~components/common/Image'
 import { default as classnames } from 'classnames'
 import type { dataProperty } from 'aos'
 
@@ -160,7 +160,6 @@ export const Service: React.FCX = (props) => {
           width="1920"
           height="1656"
           placeholder="blur"
-          layout="responsive"
         />
       </div>
       <div className={classnames(styles['component__image'], 'tablet:hidden')}>
@@ -170,7 +169,6 @@ export const Service: React.FCX = (props) => {
           width="750"
           height="1445"
           placeholder="blur"
-          layout="responsive"
         />
       </div>
     </div>
