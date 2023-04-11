@@ -1,4 +1,4 @@
-import { default as Image } from 'next/image'
+import { Image } from '~components/common/Image'
 import { default as classnames } from 'classnames'
 
 // unique
@@ -48,7 +48,7 @@ export const PageHeading: React.FCX<Props> = (props) => {
             : undefined
         }
       >
-        <Image {...{ ...image.sp }} layout="responsive" placeholder="blur" />
+        <Image {...{ ...image.sp }} placeholder="blur" />
       </div>
       <div
         className={classnames(
@@ -63,7 +63,7 @@ export const PageHeading: React.FCX<Props> = (props) => {
             : undefined
         }
       >
-        <Image {...{ ...image.pc }} layout="responsive" placeholder="blur" />
+        <Image {...{ ...image.pc }} placeholder="blur" />
       </div>
     </>
   )
