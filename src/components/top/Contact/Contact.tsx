@@ -23,7 +23,7 @@ const FORM_ITEMS: Item[] = [
     label: '会社名',
     type: 'text',
     attributes: {
-      placeholder: '例）株式会社ユメラボ',
+      placeholder: '例）株式会社グローイングアイランズ',
     },
   },
   {

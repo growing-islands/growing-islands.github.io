@@ -161,7 +161,7 @@ export const SymbolMark: React.FCX<Omit<Props, 'secondaryColor'>> = (props) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 15.63 17.45"
-      aria-label="株式会社ユメラボのロゴシンボル"
+      aria-label="株式会社グローイングアイランズのロゴシンボル"
       {...{ ...rest }}
     >
       <SymbolStroke {...{ primaryColor, shadowColor, gradient }} />

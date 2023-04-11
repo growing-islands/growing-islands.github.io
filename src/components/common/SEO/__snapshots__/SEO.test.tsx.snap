@@ -5,7 +5,7 @@ exports[`components/common/SEO Snapshot 1`] = `
   <title
     data-testid="title"
   >
-    test title｜株式会社ユメラボ
+    test title｜株式会社グローイングアイランズ
   </title>
   <meta
     content="initial-scale=1.0, width=device-width"
@@ -53,17 +53,17 @@ exports[`components/common/SEO Snapshot 1`] = `
     name="theme-color"
   />
   <meta
-    content="株式会社ユメラボは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
+    content="株式会社グローイングアイランズは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
     data-testid="description"
     name="description"
   />
   <meta
-    content="test title｜株式会社ユメラボ"
+    content="test title｜株式会社グローイングアイランズ"
     data-testid="ogTitle"
     property="og:title"
   />
   <meta
-    content="株式会社ユメラボは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
+    content="株式会社グローイングアイランズは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
     data-testid="ogDescription"
     property="og:description"
   />
@@ -83,7 +83,7 @@ exports[`components/common/SEO Snapshot 1`] = `
     property="og:image"
   />
   <meta
-    content="test title｜株式会社ユメラボ"
+    content="test title｜株式会社グローイングアイランズ"
     data-testid="ogSiteName"
     property="og:site_name"
   />

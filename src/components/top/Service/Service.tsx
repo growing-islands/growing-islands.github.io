@@ -121,7 +121,9 @@ export const Service: React.FCX = (props) => {
               data-aos="fade-up"
             >
               <header className={styles['item__header']}>
-                <h4 className={styles['item__title']}>ユメラボのSES</h4>
+                <h4 className={styles['item__title']}>
+                  グローイングアイランズのSES
+                </h4>
                 <p className={styles['item__sub-title']}>YumeLab&apos;s SES</p>
               </header>
               <p className={styles['item__description']}>

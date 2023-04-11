@@ -33,7 +33,7 @@ describe('components/common/SEO', () => {
     // title
     expect(screen.getByTestId('title')).toHaveTextContent(metaProps.title)
     expect(screen.getByTestId('ogTitle').getAttribute('content')).toEqual(
-      metaProps.title + '｜株式会社ユメラボ'
+      metaProps.title + '｜株式会社グローイングアイランズ'
     )
 
     // description

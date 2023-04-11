@@ -15,7 +15,7 @@ type ListItem = {
 const LIST_ITEMS: ListItem[] = [
   {
     label: '会社名',
-    text: '株式会社ユメラボ',
+    text: '株式会社グローイングアイランズ',
   },
   {
     label: '住所',

@@ -117,7 +117,7 @@ export const Mission: React.FCX = (props) => {
             )}
             texts={{
               en: 'Service Mission',
-              ja: 'ユメラボのポリシー',
+              ja: 'グローイングアイランズのポリシー',
             }}
             textColor={styles['palette-deepblue']}
             borderColor={styles['palette-deepblue']}

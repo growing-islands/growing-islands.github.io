@@ -31,14 +31,14 @@ export const Advantage: React.FCX = (props) => {
             )}
             texts={{
               en: 'Advantage',
-              ja: 'ユメラボのSES 3つの強み',
+              ja: 'グローイングアイランズのSES 3つの強み',
             }}
             textColor={styles['palette-deepblue']}
             borderColor={styles['palette-deepblue']}
           />
           <header className={styles['component__header']} data-aos="fade-up">
             <h2 className={styles['component__title']}>
-              ユメラボのSES 3つの強み
+              グローイングアイランズのSES 3つの強み
             </h2>
           </header>
           <div className={styles['component__content']} data-aos="fade-up">

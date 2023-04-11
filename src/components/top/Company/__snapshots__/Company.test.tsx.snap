@@ -38,7 +38,7 @@ exports[`components/top/Company Snapshot 1`] = `
           data-aos="fade-up"
         >
           <svg
-            aria-label="株式会社ユメラボのロゴシンボル"
+            aria-label="株式会社グローイングアイランズのロゴシンボル"
             class=""
             viewBox="0 0 15.63 17.45"
             xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@ exports[`components/top/Company Snapshot 1`] = `
               会社名
             </dt>
             <dd>
-              株式会社ユメラボ
+              株式会社グローイングアイランズ
             </dd>
           </dl>
           <dl

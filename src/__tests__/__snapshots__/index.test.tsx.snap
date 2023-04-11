@@ -8,7 +8,7 @@ exports[`page/Top Snapshot 1`] = `
     <title
       data-testid="title"
     >
-      幅広いIT事業で価値を共に創り続ける｜株式会社ユメラボ
+      幅広いIT事業で価値を共に創り続ける｜株式会社グローイングアイランズ
     </title>
     <meta
       content="initial-scale=1.0, width=device-width"
@@ -56,17 +56,17 @@ exports[`page/Top Snapshot 1`] = `
       name="theme-color"
     />
     <meta
-      content="株式会社ユメラボは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
+      content="株式会社グローイングアイランズは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
       data-testid="description"
       name="description"
     />
     <meta
-      content="幅広いIT事業で価値を共に創り続ける｜株式会社ユメラボ"
+      content="幅広いIT事業で価値を共に創り続ける｜株式会社グローイングアイランズ"
       data-testid="ogTitle"
       property="og:title"
     />
     <meta
-      content="株式会社ユメラボは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
+      content="株式会社グローイングアイランズは千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業です。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
       data-testid="ogDescription"
       property="og:description"
     />
@@ -86,7 +86,7 @@ exports[`page/Top Snapshot 1`] = `
       property="og:image"
     />
     <meta
-      content="幅広いIT事業で価値を共に創り続ける｜株式会社ユメラボ"
+      content="幅広いIT事業で価値を共に創り続ける｜株式会社グローイングアイランズ"
       data-testid="ogSiteName"
       property="og:site_name"
     />
@@ -210,7 +210,7 @@ exports[`page/Top Snapshot 1`] = `
                       class=""
                     >
                       <span>
-                        ユメラボのSES
+                        グローイングアイランズのSES
                       </span>
                     </a>
                   </li>
@@ -394,7 +394,7 @@ exports[`page/Top Snapshot 1`] = `
                       </span>
                       <hr />
                       <span>
-                        ユメラボについて
+                        グローイングアイランズについて
                       </span>
                     </div>
                   </div>
@@ -402,7 +402,7 @@ exports[`page/Top Snapshot 1`] = `
                 <p
                   data-aos="fade-up"
                 >
-                  株式会社ユメラボは、お客様の事業戦略から
+                  株式会社グローイングアイランズは、お客様の事業戦略から
                   <br />
                   現在抱える課題まで徹底的に理解、
                   <br />
@@ -430,7 +430,7 @@ exports[`page/Top Snapshot 1`] = `
                       </p>
                       <div>
                         <svg
-                          aria-label="株式会社ユメラボのロゴシンボル"
+                          aria-label="株式会社グローイングアイランズのロゴシンボル"
                           viewBox="0 0 15.63 17.45"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -545,7 +545,7 @@ exports[`page/Top Snapshot 1`] = `
                   data-aos="fade-up"
                 >
                   <svg
-                    aria-label="株式会社ユメラボのロゴシンボル"
+                    aria-label="株式会社グローイングアイランズのロゴシンボル"
                     class=""
                     viewBox="0 0 15.63 17.45"
                     xmlns="http://www.w3.org/2000/svg"
@@ -668,7 +668,7 @@ exports[`page/Top Snapshot 1`] = `
                   data-aos="fade-up"
                 >
                   <svg
-                    aria-label="株式会社ユメラボのロゴシンボル"
+                    aria-label="株式会社グローイングアイランズのロゴシンボル"
                     class=""
                     viewBox="0 0 15.63 17.45"
                     xmlns="http://www.w3.org/2000/svg"
@@ -754,7 +754,7 @@ exports[`page/Top Snapshot 1`] = `
                   >
                     <header>
                       <h4>
-                        ユメラボのSES
+                        グローイングアイランズのSES
                       </h4>
                       <p>
                         YumeLab's SES
@@ -845,7 +845,7 @@ exports[`page/Top Snapshot 1`] = `
                       </span>
                       <hr />
                       <span>
-                        ユメラボのポリシー
+                        グローイングアイランズのポリシー
                       </span>
                     </div>
                   </div>
@@ -855,7 +855,7 @@ exports[`page/Top Snapshot 1`] = `
                   data-aos="fade-up"
                 >
                   <svg
-                    aria-label="株式会社ユメラボのロゴシンボル"
+                    aria-label="株式会社グローイングアイランズのロゴシンボル"
                     class=""
                     viewBox="0 0 15.63 17.45"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1202,7 +1202,7 @@ exports[`page/Top Snapshot 1`] = `
                   data-aos="fade-up"
                 >
                   <svg
-                    aria-label="株式会社ユメラボのロゴシンボル"
+                    aria-label="株式会社グローイングアイランズのロゴシンボル"
                     class=""
                     viewBox="0 0 15.63 17.45"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1333,7 +1333,7 @@ exports[`page/Top Snapshot 1`] = `
                       会社名
                     </dt>
                     <dd>
-                      株式会社ユメラボ
+                      株式会社グローイングアイランズ
                     </dd>
                   </dl>
                   <dl
@@ -1414,7 +1414,7 @@ exports[`page/Top Snapshot 1`] = `
                   data-aos="fade-up"
                 >
                   <svg
-                    aria-label="株式会社ユメラボのロゴシンボル"
+                    aria-label="株式会社グローイングアイランズのロゴシンボル"
                     class=""
                     viewBox="0 0 15.63 17.45"
                     xmlns="http://www.w3.org/2000/svg"

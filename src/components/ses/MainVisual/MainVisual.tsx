@@ -16,18 +16,18 @@ export const MainVisual: React.FCX = (props) => {
   return (
     <PageHeading
       className={classnames(styles['components'], className)}
-      title="ユメラボのSES"
+      title="グローイングアイランズのSES"
       text="YumeLab's SES"
       image={{
         sp: {
           src: BgMvSp,
-          alt: 'ユメラボのSESのイメージ',
+          alt: 'グローイングアイランズのSESのイメージ',
           width: 375,
           height: 297,
         },
         pc: {
           src: BgMvPc,
-          alt: 'ユメラボのSESのイメージ',
+          alt: 'グローイングアイランズのSESのイメージ',
           width: 1920,
           height: 918,
         },

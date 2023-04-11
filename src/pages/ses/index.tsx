@@ -36,8 +36,8 @@ const Ses: NextPage = () => {
   return (
     <div className="l-page">
       <SEO
-        title="ユメラボのSES｜幅広いIT事業で価値を共に創り続ける"
-        description="千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業、株式会社ユメラボの「ユメラボのSES」のご紹介ページです。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
+        title="グローイングアイランズのSES｜幅広いIT事業で価値を共に創り続ける"
+        description="千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業、株式会社グローイングアイランズの「グローイングアイランズのSES」のご紹介ページです。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
         url={PAGE_INFO.URL + '/ses'}
       />
       <Header overBorder={inView} onShow={setHeaderShow} />
@@ -93,7 +93,7 @@ const Ses: NextPage = () => {
           <FixedToTopButton />
         </main>
         <LeadContact
-          text={`株式会社ユメラボは代表自らがエンジニアです。\n企業様のエンジニア不足解消のお手伝いから、エンジニア様への案件ご紹介まで安心してご相談頂けます。\nまずはお気軽にご相談下さい。`}
+          text={`株式会社グローイングアイランズは代表自らがエンジニアです。\n企業様のエンジニア不足解消のお手伝いから、エンジニア様への案件ご紹介まで安心してご相談頂けます。\nまずはお気軽にご相談下さい。`}
           style={{
             backgroundImage: `url(
               ${device === 'sp' ? BgContactSp.src : BgContactPc.src}

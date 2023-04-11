@@ -22,6 +22,9 @@ import { Angle as AngleIcon } from '~components/common/Icons/Angle'
 
 import { HamburgerButton } from './HamburgerButton'
 
+import { Image } from '~components/common/Image'
+import { default as LogoImage } from '~images/top/logo.png'
+
 // scss
 import * as styles from './Header.module.scss'
 
@@ -63,7 +66,7 @@ const NAVIGATION_ITEMS: NavigationItem[] = [
       },
       {
         id: 'ses',
-        label: 'ユメラボのSES',
+        label: 'グローイングアイランズのSES',
         pc: true,
         anchor: false,
         href: pagesPath.ses.$url(),
@@ -232,11 +235,10 @@ export const Header: React.FCX<Props> = (props) => {
           <Logo className={styles['component__logo']} data-testid="logo">
             <Link href="/">
               <a>
-                <MainLogoIcon
-                  className={styles['component__svg']}
-                  primaryColor={styles['palette-white']}
-                  secondaryColor={styles['palette-white']}
-                  shadowColor={styles['palette-whiteshadow']}
+                <Image
+                  src={LogoImage.src}
+                  alt="グローイングアイランズ"
+                  width="500"
                 />
               </a>
             </Link>

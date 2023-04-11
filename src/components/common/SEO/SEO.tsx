@@ -21,7 +21,7 @@ export type Props = {
 export const SEO: React.FCX<Props & React.child> = (props) => {
   const { title, description, url, image, meta, children } = props
 
-  const titlePrefix = '｜株式会社ユメラボ'
+  const titlePrefix = '｜株式会社グローイングアイランズ'
 
   const formattedTitle = title + titlePrefix
 

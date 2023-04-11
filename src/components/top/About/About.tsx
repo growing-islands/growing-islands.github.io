@@ -27,12 +27,12 @@ export const About: React.FCX = (props) => {
             className="hidden tablet:block"
             texts={{
               en: 'About  Yume Lab',
-              ja: 'ユメラボについて',
+              ja: 'グローイングアイランズについて',
             }}
             textColor={styles['palette-white']}
           />
           <p className={styles['component__text']} data-aos="fade-up">
-            株式会社ユメラボは、お客様の事業戦略から
+            株式会社グローイングアイランズは、お客様の事業戦略から
             <br />
             現在抱える課題まで徹底的に理解、
             <br />

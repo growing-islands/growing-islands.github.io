@@ -39,7 +39,7 @@ const ContractDevelopment: NextPage = () => {
     <div className="l-page">
       <SEO
         title="共創する受託開発｜幅広いIT事業で価値を共に創り続ける"
-        description="千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業、株式会社ユメラボの「共創する受託開発」のご紹介ページです。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
+        description="千葉県浦安市のIT/Web開発・SES事業でお客様のIT投資を最大限に生かし価値を共に創り続けるシステム開発企業、株式会社グローイングアイランズの「共創する受託開発」のご紹介ページです。システム開発・保守運用、IT活用・サポート、SESでの体制構築から、Webサイト制作・企画運用まで、IT/Webに関わるトータルソリューションサービスを提供しております。"
         url={PAGE_INFO.URL + '/contract-development'}
       />
       <Header overBorder={inView} onShow={setHeaderShow} />

@@ -13,7 +13,7 @@ exports[`components/ses/MainVisual Snapshot 1`] = `
       >
         <header>
           <h1>
-            ユメラボのSES
+            グローイングアイランズのSES
           </h1>
           <p>
             YumeLab's SES
@@ -26,7 +26,7 @@ exports[`components/ses/MainVisual Snapshot 1`] = `
     class="tablet:hidden"
   >
     <img
-      alt="ユメラボのSESのイメージ"
+      alt="グローイングアイランズのSESのイメージ"
       height="297"
       layout="responsive"
       placeholder="blur"
@@ -38,7 +38,7 @@ exports[`components/ses/MainVisual Snapshot 1`] = `
     class="hidden tablet:block"
   >
     <img
-      alt="ユメラボのSESのイメージ"
+      alt="グローイングアイランズのSESのイメージ"
       height="918"
       layout="responsive"
       placeholder="blur"

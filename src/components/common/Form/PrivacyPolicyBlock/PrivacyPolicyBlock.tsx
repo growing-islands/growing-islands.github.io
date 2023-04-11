@@ -11,7 +11,7 @@ export const PrivacyPolicyBlock: React.FCX = (props) => {
         <p className={styles['component__text']}>
           プライバシーポリシー
           <br />
-          株式会社ユメラボ（以下「当社」）では、個人情報に関する法令およびその他の規範を遵守し、お客様の大切な個人情報の保護に万全を尽くします。
+          株式会社グローイングアイランズ（以下「当社」）では、個人情報に関する法令およびその他の規範を遵守し、お客様の大切な個人情報の保護に万全を尽くします。
         </p>
         <p className={styles['component__text']}>
           1 個人情報の収集について
@@ -69,7 +69,7 @@ export const PrivacyPolicyBlock: React.FCX = (props) => {
         <p className={styles['component__text']}>
           7 当社名称及び代表者氏名
           <br />
-          会社名：株式会社ユメラボ
+          会社名：株式会社グローイングアイランズ
           <br />
           代表取締役：深松一平
           <br />
