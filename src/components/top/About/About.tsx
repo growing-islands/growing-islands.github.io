@@ -70,7 +70,7 @@ export const About: React.FCX = (props) => {
                 <p className={styles['item__description']}>共創</p>
                 <div className={styles['item__image']}>
                   <Image
-                    src={IllustIdea}
+                    src={IllustIdea.src}
                     alt="IDEA、共創のイラスト"
                     width={124}
                     height={126}
@@ -91,7 +91,7 @@ export const About: React.FCX = (props) => {
                 <p className={styles['item__description']}>目標</p>
                 <div className={styles['item__image']}>
                   <Image
-                    src={IllustGoal}
+                    src={IllustGoal.src}
                     alt="GOAL、目標のイラスト"
                     width={144}
                     height={160}

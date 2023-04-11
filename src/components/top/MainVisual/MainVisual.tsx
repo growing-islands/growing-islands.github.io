@@ -53,7 +53,7 @@ export const MainVisual: React.FCX = (props) => {
             <div className={styles['object__circle--2']} />
             <div className={styles['object__image']}>
               <Image
-                src={ImageObject}
+                src={ImageObject.src}
                 width={683}
                 height={929}
                 placeholder="blur"

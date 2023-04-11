@@ -44,7 +44,7 @@ export const Advantage: React.FCX = (props) => {
           <div className={styles['component__content']} data-aos="fade-up">
             <div className={styles['component__circle']}>
               <Image
-                src={ImageTriCircle}
+                src={ImageTriCircle.src}
                 alt="Object"
                 width={1029}
                 height={1029}
@@ -133,7 +133,7 @@ export const Advantage: React.FCX = (props) => {
             <div className={styles['component__images']}>
               <div className={styles['component__illust']}>
                 <Image
-                  src={Illust01}
+                  src={Illust01.src}
                   alt="代表自身がエンジニア"
                   width={132}
                   height={132}
@@ -142,7 +142,7 @@ export const Advantage: React.FCX = (props) => {
               </div>
               <div className={styles['component__illust']}>
                 <Image
-                  src={Illust02}
+                  src={Illust02.src}
                   alt="マネジメント"
                   width={128}
                   height={128}
@@ -151,7 +151,7 @@ export const Advantage: React.FCX = (props) => {
               </div>
               <div className={styles['component__illust']}>
                 <Image
-                  src={Illust03}
+                  src={Illust03.src}
                   alt="長期稼働"
                   width={144}
                   height={144}

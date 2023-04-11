@@ -54,7 +54,7 @@ export const Trouble: React.FCX = (props) => {
               )}
             >
               <Image
-                src={ImageTroubleSp}
+                src={ImageTroubleSp.src}
                 width={705}
                 height={1098}
                 placeholder="blur"
@@ -68,7 +68,7 @@ export const Trouble: React.FCX = (props) => {
               )}
             >
               <Image
-                src={ImageTroublePc}
+                src={ImageTroublePc.src}
                 width={1264}
                 height={1198}
                 placeholder="blur"

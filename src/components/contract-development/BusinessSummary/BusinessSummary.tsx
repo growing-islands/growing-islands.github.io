@@ -52,7 +52,7 @@ export const BusinessSummary: React.FCX = (props) => {
           className={classnames(styles['component__image'], 'tablet:hidden')}
         >
           <Image
-            src={ImageFlowSp}
+            src={ImageFlowSp.src}
             width={750}
             height={880}
             placeholder="blur"
@@ -66,7 +66,7 @@ export const BusinessSummary: React.FCX = (props) => {
           )}
         >
           <Image
-            src={ImageFlowPc}
+            src={ImageFlowPc.src}
             width={1920}
             height={1681}
             placeholder="blur"

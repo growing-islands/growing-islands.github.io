@@ -56,7 +56,7 @@ export const Trouble: React.FCX = (props) => {
               >
                 <Image
                   className={styles['balloon__image']}
-                  src={BgBalloon}
+                  src={BgBalloon.src}
                   alt="エンジニア様イメージ画像"
                   width={542}
                   height={274}
@@ -79,7 +79,7 @@ export const Trouble: React.FCX = (props) => {
               >
                 <div className={styles['person__image']}>
                   <Image
-                    src={ImagePerson01}
+                    src={ImagePerson01.src}
                     width={661}
                     height={660}
                     placeholder="blur"
@@ -99,7 +99,7 @@ export const Trouble: React.FCX = (props) => {
               >
                 <Image
                   className={styles['balloon__image']}
-                  src={BgBalloon}
+                  src={BgBalloon.src}
                   alt="企業様イメージ画像"
                   width={542}
                   height={274}
@@ -126,7 +126,7 @@ export const Trouble: React.FCX = (props) => {
               >
                 <div className={styles['person__image']}>
                   <Image
-                    src={ImagePerson02}
+                    src={ImagePerson02.src}
                     width={636}
                     height={670}
                     placeholder="blur"

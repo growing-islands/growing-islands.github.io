@@ -109,7 +109,11 @@ export const CaseStudy: React.FCX = (props) => {
                   return (
                     <SwiperSlide key={`${alt}-${index}`}>
                       <div className={styles['slider__item']}>
-                        <Image {...{ ...image }} placeholder="blur" />
+                        <Image
+                          {...{ ...image }}
+                          src={image.src.src}
+                          placeholder="blur"
+                        />
                       </div>
                     </SwiperSlide>
                   )

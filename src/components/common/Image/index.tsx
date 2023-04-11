@@ -1,6 +1,6 @@
 type Props = {
   placeholder?: string
-  src: StaticImageData
+  src: string
   alt?: string
   width?: number | string
   height?: number | string

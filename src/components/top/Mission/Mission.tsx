@@ -182,6 +182,7 @@ export const Mission: React.FCX = (props) => {
                       alt={`${title}のモチーフオブジェクト`}
                       placeholder="blur"
                       {...{ ...image }}
+                      src={image.src.src}
                     />
                   </div>
                 </li>

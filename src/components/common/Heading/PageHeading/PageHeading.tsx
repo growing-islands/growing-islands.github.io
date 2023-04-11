@@ -48,7 +48,7 @@ export const PageHeading: React.FCX<Props> = (props) => {
             : undefined
         }
       >
-        <Image {...{ ...image.sp }} placeholder="blur" />
+        <Image {...{ ...image.sp }} src={image.sp.src.src} placeholder="blur" />
       </div>
       <div
         className={classnames(
@@ -63,7 +63,7 @@ export const PageHeading: React.FCX<Props> = (props) => {
             : undefined
         }
       >
-        <Image {...{ ...image.pc }} placeholder="blur" />
+        <Image {...{ ...image.pc }} src={image.pc.src.src} placeholder="blur" />
       </div>
     </>
   )

@@ -99,7 +99,7 @@ export const Step: React.FCX = (props) => {
                   <div className={styles['item__head']}>
                     <div className={styles['item__image']}>
                       <Image
-                        src={image}
+                        src={image.src}
                         alt={`${title}のイラスト`}
                         width={image.width}
                         height={image.height}

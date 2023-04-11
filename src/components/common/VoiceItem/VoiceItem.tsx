@@ -41,7 +41,9 @@ export const VoiceItem: React.FCX<Props> = (props) => {
     >
       <div className={styles['component__head']}>
         <div className={styles['component__image']}>
-          {image && <Image {...{ ...image }} placeholder="blur" />}
+          {image && (
+            <Image {...{ ...image }} src={image.src.src} placeholder="blur" />
+          )}
         </div>
       </div>
       <div className={styles['component__body']}>

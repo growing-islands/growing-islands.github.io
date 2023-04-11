@@ -155,7 +155,7 @@ export const Service: React.FCX = (props) => {
         )}
       >
         <Image
-          src={ImageServicePc}
+          src={ImageServicePc.src}
           alt="共創する受託開発のイメージ"
           width="1920"
           height="1656"
@@ -164,7 +164,7 @@ export const Service: React.FCX = (props) => {
       </div>
       <div className={classnames(styles['component__image'], 'tablet:hidden')}>
         <Image
-          src={ImageServiceSp}
+          src={ImageServiceSp.src}
           alt="共創する受託開発のイメージ"
           width="750"
           height="1445"
