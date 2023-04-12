@@ -65,7 +65,7 @@ export const Advantage: React.FCX = (props) => {
                 />
               </div>
               <p className={styles['center__text']}>
-                YumeLab&apos;s
+                Growing Islands&apos;s
                 <br />
                 SES
               </p>

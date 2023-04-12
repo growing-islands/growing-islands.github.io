@@ -26,7 +26,7 @@ export const About: React.FCX = (props) => {
           <ColumnHeadingForSection
             className="hidden tablet:block"
             texts={{
-              en: 'About  Yume Lab',
+              en: 'About  Growing Islands',
               ja: 'グローイングアイランズについて',
             }}
             textColor={styles['palette-white']}

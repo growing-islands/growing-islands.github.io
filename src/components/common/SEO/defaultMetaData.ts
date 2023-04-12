@@ -4,8 +4,8 @@ type defaultMetaDataType = {
   ogUrl: string
   ogImage: string
   ogSiteName: string
-  twitterCard: 'summary' | 'summary_large_image' | 'app' | 'player'
-  twitterSite: `@${string}`
+  twitterCard?: 'summary' | 'summary_large_image' | 'app' | 'player'
+  twitterSite?: `@${string}`
 }
 
 export const defaultMetaData: defaultMetaDataType = {
@@ -15,6 +15,6 @@ export const defaultMetaData: defaultMetaDataType = {
   ogUrl: process.env.NEXT_PUBLIC_SITE_URL || '',
   ogImage: `${process.env.NEXT_PUBLIC_SITE_URL || ''}/OGP.png`,
   ogSiteName: 'Default ogSiteName',
-  twitterCard: 'summary_large_image',
-  twitterSite: '@yumelab1214',
+  // twitterCard: 'summary_large_image',
+  // twitterSite: '@yumelab1214',
 }

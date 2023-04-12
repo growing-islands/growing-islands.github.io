@@ -17,7 +17,7 @@ export const MainVisual: React.FCX = (props) => {
     <PageHeading
       className={classnames(styles['components'], className)}
       title="グローイングアイランズのSES"
-      text="YumeLab's SES"
+      text="Growing Islands's SES"
       image={{
         sp: {
           src: BgMvSp,

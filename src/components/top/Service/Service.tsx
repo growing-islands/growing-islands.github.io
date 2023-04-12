@@ -124,7 +124,9 @@ export const Service: React.FCX = (props) => {
                 <h4 className={styles['item__title']}>
                   グローイングアイランズのSES
                 </h4>
-                <p className={styles['item__sub-title']}>YumeLab&apos;s SES</p>
+                <p className={styles['item__sub-title']}>
+                  Growing Islands&apos;s SES
+                </p>
               </header>
               <p className={styles['item__description']}>
                 代表自身がエンジニアである弊社では、

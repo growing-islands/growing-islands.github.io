@@ -23,9 +23,9 @@ export const Footer: React.FCX = (props) => {
     >
       <div className={styles['component__inner']}>
         <small className={styles['component__copyright']} translate="no">
-          &copy;Yume Lab Inc.
+          &copy;Growing Islands Inc.
         </small>
-        <nav className={styles['component__navigation']}>
+        {/* <nav className={styles['component__navigation']}>
           <ul
             className={classnames(
               styles['component__socials'],
@@ -63,7 +63,7 @@ export const Footer: React.FCX = (props) => {
               </a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </footer>
   )
