@@ -18,7 +18,8 @@
     "format": "prettier --write .",
     "test": "jest --watch",
     "test-all": "yarn eslint && yarn format && yarn stylelint && yarn test",
-    "analyze": "cross-env ANALYZE=true next build"
+    "analyze": "cross-env ANALYZE=true next build",
+    "export": "yarn build && next export -o docs"
   },
   "husky": {
     "hooks": {

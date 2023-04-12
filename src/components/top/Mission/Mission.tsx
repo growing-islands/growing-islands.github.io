@@ -18,7 +18,7 @@ type MissionItem = {
   image: {
     src: StaticImageData
     width: number | string
-    height: number
+    height?: number
   }
   contents: JSX.Element[]
 }
