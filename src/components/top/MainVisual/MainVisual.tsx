@@ -54,8 +54,7 @@ export const MainVisual: React.FCX = (props) => {
             <div className={styles['object__image']}>
               <Image
                 src={ImageObject.src}
-                width={683}
-                height={929}
+                width="100%"
                 placeholder="blur"
                 alt="Object"
               />

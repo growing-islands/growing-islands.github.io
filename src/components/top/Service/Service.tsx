@@ -159,8 +159,7 @@ export const Service: React.FCX = (props) => {
         <Image
           src={ImageServicePc.src}
           alt="共創する受託開発のイメージ"
-          width="1920"
-          height="1656"
+          width="100%"
           placeholder="blur"
         />
       </div>
@@ -168,8 +167,7 @@ export const Service: React.FCX = (props) => {
         <Image
           src={ImageServiceSp.src}
           alt="共創する受託開発のイメージ"
-          width="750"
-          height="1445"
+          width="100%"
           placeholder="blur"
         />
       </div>

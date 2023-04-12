@@ -17,7 +17,7 @@ type MissionItem = {
   title: string
   image: {
     src: StaticImageData
-    width: number
+    width: number | string
     height: number
   }
   contents: JSX.Element[]
@@ -28,8 +28,7 @@ const ITEMS: MissionItem[] = [
     title: 'MISSION',
     image: {
       src: ImageMission01,
-      width: 532.5,
-      height: 532.5,
+      width: '100%',
     },
     contents: [
       <div key="mission" className={styles['item__content']}>
@@ -47,8 +46,7 @@ const ITEMS: MissionItem[] = [
     title: 'VISION',
     image: {
       src: ImageMission02,
-      width: 532.5,
-      height: 532.5,
+      width: '100%',
     },
     contents: [
       <div key="vision" className={styles['item__content']}>
@@ -66,8 +64,7 @@ const ITEMS: MissionItem[] = [
     title: 'VALUE',
     image: {
       src: ImageMission03,
-      width: 532.5,
-      height: 532.5,
+      width: '100%',
     },
     contents: [
       <div key="value-1" className={styles['item__content']}>

@@ -12,7 +12,7 @@ import * as styles from './MainVisual.module.scss'
 
 export const MainVisual: React.FCX = (props) => {
   const { className, style } = props
-  console.log({ BgMvSp })
+
   return (
     <PageHeading
       className={classnames(styles['components'], className)}

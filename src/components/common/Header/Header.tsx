@@ -16,7 +16,6 @@ import { useAppDispatch } from '~hooks/useAppDispatch'
 import { setHeaderHeight } from '~stores/Header'
 
 // components
-import { MainLogo as MainLogoIcon } from '~components/common/Icons/Logo'
 import { Mail as MailIcon } from '~components/common/Icons/Mail'
 import { Angle as AngleIcon } from '~components/common/Icons/Angle'
 
@@ -238,7 +237,7 @@ export const Header: React.FCX<Props> = (props) => {
                 <Image
                   src={LogoImage.src}
                   alt="グローイングアイランズ"
-                  width="500"
+                  width="60%"
                 />
               </a>
             </Link>
