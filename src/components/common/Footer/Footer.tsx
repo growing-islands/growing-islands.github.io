@@ -1,16 +1,16 @@
 import { default as classnames } from 'classnames'
 
 // components
-import {
-  Twitter as TwitterIcon,
-  Facebook as FacebookIcon,
-} from '~components/common/Icons/Socials'
+// import {
+//   Twitter as TwitterIcon,
+//   Facebook as FacebookIcon,
+// } from '~components/common/Icons/Socials'
 
 // scss
 import * as styles from './Footer.module.scss'
 
 // utils
-import { PAGE_INFO } from '~utils/Constants'
+// import { PAGE_INFO } from '~utils/Constants'
 
 export const Footer: React.FCX = (props) => {
   const { className, style } = props
