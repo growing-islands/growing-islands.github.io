@@ -1,0 +1,8 @@
+.component {
+  position: absolute;
+  top: 0;
+
+  @include mq() {
+    left: calc((13.95% / 2) - 10px);
+  }
+}

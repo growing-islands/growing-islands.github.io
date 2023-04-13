@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/common/Heading/ColumnHeadingForSection Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    data-testid="component"
+  >
+    <div
+      class=""
+    >
+      <div>
+        <span
+          translate="no"
+        >
+          Test
+        </span>
+        <hr />
+        <span>
+          テスト
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

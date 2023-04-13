@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/contract-development/Advantage Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    id="advantage"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <div
+          class="hidden tablet:block"
+          data-testid="component"
+        >
+          <div
+            class=""
+          >
+            <div>
+              <span
+                translate="no"
+              >
+                Advantage
+              </span>
+              <hr />
+              <span>
+                共創する受託開発 4つの強み
+              </span>
+            </div>
+          </div>
+        </div>
+        <header
+          data-aos="fade-up"
+        >
+          <h2
+            class=""
+            data-testid="component"
+          >
+            共創する受託開発 4つの強み
+          </h2>
+          <p
+            class=""
+            data-testid="component"
+          >
+            事業成長を目的とした
+            <br
+              class="tablet:hidden"
+            />
+            低コストIT活用で問題を解決します！
+          </p>
+        </header>
+        <ul
+          data-aos="fade-up"
+        >
+          <li
+            class=""
+          >
+            <div
+              style="height: 0px;"
+            >
+              <div>
+                <h3>
+                  大きな投資が
+                  <strong>
+                    不要
+                  </strong>
+                </h3>
+              </div>
+            </div>
+            <div>
+              <p
+                class=""
+                data-testid="component"
+              >
+                オフショアによる低コスト
+定額顧問制のため企画のみに
+専念していただけます
+              </p>
+            </div>
+          </li>
+          <li
+            class=""
+          >
+            <div
+              style="height: 0px;"
+            >
+              <div>
+                <h3>
+                  追加費用が
+                  <strong>
+                    不要
+                  </strong>
+                </h3>
+              </div>
+            </div>
+            <div>
+              <p
+                class=""
+                data-testid="component"
+              >
+                いつでも仕様変更や
+優先度の変更が可能です
+              </p>
+            </div>
+          </li>
+          <li
+            class=""
+          >
+            <div
+              style="height: 0px;"
+            >
+              <div>
+                <h3>
+                  採用が
+                  <strong>
+                    不要
+                  </strong>
+                </h3>
+              </div>
+            </div>
+            <div>
+              <p
+                class=""
+                data-testid="component"
+              >
+                開発体制を最短で
+所有することができます
+              </p>
+            </div>
+          </li>
+          <li
+            class=""
+          >
+            <div
+              style="height: 0px;"
+            >
+              <div>
+                <h3>
+                  指示書が
+                  <strong>
+                    不要
+                  </strong>
+                </h3>
+              </div>
+            </div>
+            <div>
+              <p
+                class=""
+                data-testid="component"
+              >
+                まず専任のディレクターに
+お気軽にご相談ください
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

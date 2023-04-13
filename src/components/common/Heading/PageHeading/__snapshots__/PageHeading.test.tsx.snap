@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/common/Heading/PageHeading Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <header>
+          <h1>
+            Test
+          </h1>
+          <p>
+            test text
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+  <div
+    class="tablet:hidden"
+  >
+    <img
+      height="100"
+      layout="responsive"
+      placeholder="blur"
+      src="[object Object]"
+      width="100"
+    />
+  </div>
+  <div
+    class="hidden tablet:block"
+  >
+    <img
+      height="100"
+      layout="responsive"
+      placeholder="blur"
+      src="[object Object]"
+      width="100"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,49 @@
+$palette: (
+  'white': #fff,
+  'whiteshadow': rgba(#fff, 0.2),
+  'black': #000,
+  'mintblue': #00afc4,
+  'gray': #6a6c77,
+  'smokegray': #ccc,
+  'lightgray': #e5e5e5,
+  'deepgray': #999,
+  'lightblack': #333,
+  'deepblue': #1e2888,
+  'emeraldgreen': #06717e,
+  'pastelgreen': #8eccc3,
+  'vividgreen': #05ceb9,
+  'lemon': #eceda2,
+  'yellow': #ead966,
+  'smokegreen': #baecca,
+  'borderblue': #1f4bbc,
+  'dirtyblue': #5a7993,
+  'bordergreen': #076e7f,
+  'blueblack': #000722,
+  'lightgreen': #c4e4df,
+  'red': #c00,
+  'list1': #578fa8,
+  'list2': #81c0c5,
+  'list3': #e4d9ab,
+  'list4': #eea65e,
+  'step1': #9ed442,
+  'step2': #43d1a1,
+  'step3': #40d3e2,
+  'step4': #41a7e1,
+  'step5': #4282cc,
+);
+
+$z-index: (
+  'header': 10000,
+  'logo': 11000,
+  'hamburger': 11000,
+  'max': 2147483647,
+);
+
+// No rules have been disabledを回避するためstylelintを無効にする
+/* stylelint-disable */
+:export {
+  @each $key, $value in $palette {
+    palette-#{unquote($key)}: $value;
+  }
+}
+/* stylelint-enable */

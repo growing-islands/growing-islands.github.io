@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/contract-development/BusinessSummary Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    id="business-summary"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <div
+          class="hidden tablet:block"
+          data-testid="component"
+        >
+          <div
+            class=""
+          >
+            <div>
+              <span
+                translate="no"
+              >
+                Business Summary
+              </span>
+              <hr />
+              <span>
+                事業概要
+              </span>
+            </div>
+          </div>
+        </div>
+        <header
+          data-aos="fade-up"
+        >
+          <h2>
+            事業概要
+          </h2>
+          <p>
+            お客様の事業戦略から徹底的に理解し、目的を明確化。
+            <br />
+            目指す未来に共感し、オフショアでの低コストを軸に
+            <br />
+            適切なIT施策をご提案いたします。
+          </p>
+        </header>
+      </div>
+    </div>
+    <div
+      data-aos="fade-up"
+    >
+      <div
+        class="tablet:hidden"
+      >
+        <img
+          alt="事業概要フロー図"
+          height="880"
+          layout="responsive"
+          placeholder="blur"
+          src="test-file-stub"
+          width="750"
+        />
+      </div>
+      <div
+        class="hidden tablet:block"
+      >
+        <img
+          alt="事業概要フロー図"
+          height="1681"
+          layout="responsive"
+          placeholder="blur"
+          src="test-file-stub"
+          width="1920"
+        />
+      </div>
+    </div>
+    <div
+      class="l-wrap"
+      data-aos="fade-up"
+    >
+      <div
+        class="l-inner"
+      >
+        <div>
+          <p
+            class=""
+            data-testid="component"
+          >
+            ※システムの開発フローに関し「PDCAを小さく早く回す」をコンセプトとしております。
+          </p>
+          <p
+            class=""
+            data-testid="component"
+          >
+            今までの請負型の開発プロセスのように時間をかけて開発を行い「納品して終わり」ではなく、オフショアでの低コスト定額顧問スタイルを提供することで、弊社はお客様のパートナーとなり、事業成長と併走いたします。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

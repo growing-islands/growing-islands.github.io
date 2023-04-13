@@ -1,0 +1,178 @@
+$top-service-zIndex: (
+  'image': 1,
+  'inner': 2,
+);
+
+.component {
+  position: relative;
+  padding: mod_vw(8) 0 mod_vw(100);
+
+  @include mq() {
+    padding: 198px 0 156px;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: map-get($top-service-zIndex, 'inner');
+  }
+
+  &__header {
+    &:not(:last-child) {
+      margin-bottom: mod_vw(156);
+
+      @include mq() {
+        margin-bottom: 221px;
+      }
+    }
+  }
+
+  &__column-header {
+    @include mq() {
+      top: 190px;
+    }
+  }
+
+  // &__list {
+  // }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: mod_vw(1061);
+
+      @include mq() {
+        margin-bottom: 10vw;
+      }
+
+      @include mq($from: wide) {
+        margin-bottom: 25.1vw;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: mod_vw(840);
+    left: 50%;
+    z-index: map-get($top-service-zIndex, 'image');
+    width: 100%;
+    transform: translateX(-50%);
+
+    @include mq() {
+      top: 589px;
+    }
+  }
+}
+
+.header {
+  &__text {
+    @include typo(24, 48, 24, 48);
+
+    margin-top: mod_vw(40);
+    color: map-get($palette, 'deepblue');
+
+    @include mq() {
+      margin-top: 63px;
+      color: map-get($palette, 'white');
+    }
+  }
+}
+
+.item {
+  $item: #{&};
+
+  color: map-get($palette, 'deepblue');
+
+  @include mq() {
+    width: 54%;
+    margin: 0 auto 0 0;
+  }
+
+  &:nth-child(even) {
+    @include mq() {
+      margin: 0 0 0 auto;
+    }
+
+    #{$item} {
+      &__header {
+        margin: 0 0 0 auto;
+
+        @include mq() {
+          margin: 0;
+        }
+      }
+
+      &__description {
+        text-align: right;
+
+        @include mq() {
+          text-align: left;
+        }
+      }
+
+      &__button-wrap {
+        text-align: right;
+      }
+    }
+  }
+
+  &__header {
+    width: 60%;
+
+    @include mq() {
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(30);
+
+      @include mq() {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__title {
+    @include typo(42, 48, 32, 48);
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(14);
+
+      @include mq() {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &__sub-title {
+    @include typo(20, 22, 16, 22);
+
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  &__description {
+    @include typo(24, 48, 18, 32);
+
+    text-shadow: 0 0 mod_vw(4.8) map-get($palette, 'white');
+
+    @include mq() {
+      text-shadow: none;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(36);
+
+      @include mq() {
+        margin-bottom: 33px;
+      }
+    }
+  }
+
+  &__button {
+    width: mod_vw(480);
+
+    @include mq() {
+      width: 370px;
+    }
+  }
+}

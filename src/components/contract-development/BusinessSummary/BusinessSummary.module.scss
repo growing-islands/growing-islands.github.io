@@ -1,0 +1,81 @@
+$business-summary-zIndex: (
+  'images': 0,
+  'inner': 2,
+);
+
+.component {
+  position: relative;
+  padding: mod_vw(23) 0 mod_vw(80);
+
+  @include mq() {
+    padding: 128px 0 102px;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: map-get($business-summary-zIndex, 'inner');
+  }
+
+  &__column-header {
+    @include mq() {
+      top: 26px;
+    }
+  }
+
+  &__title {
+    @include typo(42, 90, 48, 90);
+
+    color: map-get($palette, 'white');
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(4);
+
+      @include mq() {
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  &__text {
+    @include typo(24, 48, 24, 48);
+
+    color: map-get($palette, 'white');
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+
+  &__images {
+    position: relative;
+    z-index: map-get($business-summary-zIndex, 'images');
+    width: 100%;
+    margin-top: mod_vw(-40);
+
+    @include mq() {
+      margin-top: -9.11vw;
+    }
+  }
+
+  &__detail {
+    @include mq() {
+      margin-top: -8.85vw;
+    }
+  }
+
+  &__attention {
+    @include typo(20, 32, 18, 32);
+
+    color: map-get($palette, 'white');
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(41);
+
+      @include mq() {
+        margin-bottom: 47px;
+      }
+    }
+  }
+}

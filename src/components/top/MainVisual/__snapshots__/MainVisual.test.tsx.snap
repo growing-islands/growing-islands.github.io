@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/top/MainVisual Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    data-testid="component"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <header
+          class=""
+        >
+          <h2>
+            CREATING
+            <br />
+            VALUE
+            <br />
+            TOGETHER
+          </h2>
+          <p>
+            価値を共に創り続ける
+          </p>
+          <p>
+            IT投資の効果を最大限に
+          </p>
+        </header>
+        <div
+          class=""
+        >
+          <svg
+            class="hidden tablet:block"
+            viewBox="0 0 100 100"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="50"
+            />
+          </svg>
+          <div />
+          <div />
+          <div>
+            <img
+              alt="Object"
+              height="929"
+              placeholder="blur"
+              src="test-file-stub"
+              width="683"
+            />
+          </div>
+        </div>
+        <div
+          class="tablet:hidden"
+        >
+          <span>
+            scroll
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

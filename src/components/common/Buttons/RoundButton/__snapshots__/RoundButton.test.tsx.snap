@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/common/Buttons/RoundButton Snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class=""
+    data-testid="button"
+  >
+    <span>
+      button
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components/common/Buttons/RoundButtonLink Snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class=""
+    data-testid="button"
+  >
+    <span>
+      button
+    </span>
+  </a>
+</DocumentFragment>
+`;

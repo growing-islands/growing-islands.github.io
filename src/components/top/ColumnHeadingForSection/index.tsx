@@ -1,0 +1,1 @@
+export { ColumnHeadingForSection } from './ColumnHeadingForSection'

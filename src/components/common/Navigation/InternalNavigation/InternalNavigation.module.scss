@@ -1,0 +1,137 @@
+.component {
+  $self: #{&};
+
+  position: relative;
+  width: 100%;
+  padding: mod_vw(10) mod_vw(34);
+  overflow-x: scroll;
+  background-image: linear-gradient(
+    to right,
+    map-get($palette, 'deepblue'),
+    map-get($palette, 'emeraldgreen')
+  );
+
+  @include mq() {
+    width: 60px;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(
+      to bottom,
+      map-get($palette, 'deepblue'),
+      map-get($palette, 'emeraldgreen')
+    );
+    border-radius: 10px;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: mod_vw(2);
+    background-color: map-get($palette, 'deepblue');
+    content: '';
+
+    @include mq() {
+      content: none;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include mq() {
+      display: block;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 1px;
+      height: 100%;
+      background-color: map-get($palette, 'lightgreen');
+
+      @include mq() {
+        right: auto;
+        left: 0;
+        width: 100%;
+        height: 1px;
+      }
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+      }
+    }
+
+    &:first-child {
+      #{$self} {
+        &__link {
+          @include mq() {
+            border-radius: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      #{$self} {
+        &__link {
+          @include mq() {
+            border-radius: 0;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__link {
+    @include typo(20, 24, 14, 18);
+
+    display: block;
+    box-sizing: border-box;
+    width: mod_vw(98);
+    padding: mod_vw(20) 0;
+    color: map-get($palette, 'white');
+    white-space: pre-wrap;
+    text-align: center;
+    word-break: keep-all;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background, color, border-color, 0.25s ease 0s;
+
+    @include mq() {
+      width: auto;
+      padding: 18px 8px;
+    }
+
+    &:hover {
+      @include mq() {
+        color: map-get($palette, 'deepblue');
+        background-color: map-get($palette, 'lightgreen');
+        border-color: map-get($palette, 'deepblue');
+      }
+    }
+
+    // &.is-active {
+    //   color: map-get($palette, 'white');
+    //   background-color: map-get($palette, 'deepblue');
+    // }
+  }
+}

@@ -1,0 +1,78 @@
+.component {
+  position: relative;
+  z-index: 1;
+  min-height: mod_vw(473);
+  padding: mod_vw(207) 0 mod_vw(50);
+  animation: showWord 2.2s ease 0s forwards;
+  animation-delay: 0.2s;
+  clip-path: inset(0 100% 0 0);
+
+  @include mq() {
+    min-height: 400px;
+    padding: 160px 0 60px;
+  }
+
+  &__title {
+    @include typo(60, 90, 60, 90);
+
+    color: map-get($palette, 'white');
+    font-weight: 300;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(30);
+
+      @include mq() {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__header {
+    margin: 0 mod_vw(84);
+
+    @include mq() {
+      margin: 0 -46px;
+    }
+  }
+
+  &__text {
+    @include typo(30, 40, 30, 40);
+
+    color: map-get($palette, 'white');
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    white-space: pre-wrap;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    opacity: 0;
+    filter: brightness(0.5);
+    animation: fadeBrightness 4s ease-out 0s forwards;
+  }
+}
+
+@keyframes fadeBrightness {
+  0% {
+    opacity: 0;
+    filter: brightness(0.5) blur(5px);
+  }
+
+  40% {
+    opacity: 1;
+    filter: brightness(1) blur(0);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}

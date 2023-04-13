@@ -1,0 +1,345 @@
+.component {
+  $this: #{&};
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: map-get($z-index, 'header');
+  width: 100%;
+  transition: transform 0.25s ease 0s;
+
+  &.is-hide {
+    transform: translateY(-100%);
+
+    #{$this} {
+      &__navigation {
+        top: auto;
+        bottom: 0;
+      }
+    }
+  }
+
+  &.is-change {
+    #{$this} {
+      &__inner {
+        background-image: linear-gradient(
+          to right,
+          map-get($palette, 'deepblue'),
+          map-get($palette, 'emeraldgreen')
+        );
+
+        @include mq() {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: mod_vw(19) mod_vw(40) mod_vw(21) mod_vw(34);
+    transition: background 0.25s ease 0s;
+
+    @include mq() {
+      align-items: flex-start;
+      padding: 0 0 0 90px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: map-get($z-index, 'logo');
+
+    @include mq() {
+      margin-top: 17px;
+    }
+
+    a {
+      display: inline-block;
+      cursor: pointer;
+
+      svg {
+        width: mod_vw(242);
+
+        @include mq() {
+          width: 225px;
+        }
+      }
+    }
+  }
+
+  // &__navigation {
+  // }
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(map-get($palette, 'blueblack'), 0.9);
+  transform: translateY(-110%);
+  transition: transform 0.25s ease 0s;
+
+  @include mq() {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background: transparent;
+    transform: none;
+    transition: none;
+  }
+
+  &.is-active {
+    transform: translateY(0);
+
+    @include mq() {
+      transform: none;
+    }
+  }
+
+  &__list {
+    height: 100%;
+    padding: mod_vw(50) mod_vw(100);
+
+    @include mq() {
+      display: flex;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    &:hover {
+      & > .navigation {
+        &__children {
+          @include mq() {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &__children {
+    margin-top: mod_vw(-10);
+
+    @include mq() {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      margin-top: 0;
+      transform: translateY(100%);
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.25s ease 0s;
+    }
+
+    li {
+      &:not(:last-child) {
+        @include mq() {
+          margin-bottom: 1px;
+        }
+      }
+
+      .link {
+        position: relative;
+        display: block;
+        padding: mod_vw(14) 0 mod_vw(14) mod_vw(36);
+        cursor: pointer;
+
+        @include mq() {
+          padding: 24px 56px 24px 57px;
+          background-color: rgba(map-get($palette, 'blueblack'), 0.9);
+          transition: background 0.25s ease 0s;
+        }
+
+        &:hover {
+          @include mq() {
+            background-color: rgba(map-get($palette, 'deepblue'), 0.9);
+          }
+        }
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: mod_vw(20);
+          height: mod_vw(2);
+          background-color: map-get($palette, 'white');
+          transform: translateY(-50%);
+          content: '';
+
+          @include mq() {
+            left: 23px;
+            width: 20px;
+            height: 1px;
+          }
+        }
+
+        &::after {
+          content: none;
+        }
+
+        &__title {
+          @include typo(20, 30, 16, 30);
+
+          color: map-get($palette, 'white');
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    margin-top: mod_vw(86);
+
+    @include mq() {
+      margin-top: 0;
+      margin-left: 8px;
+    }
+
+    a {
+      @include typo(30, 30, 20, 22);
+
+      position: relative;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding: mod_vw(37) 0;
+      color: map-get($palette, 'deepblue');
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      background-image: linear-gradient(
+        to bottom,
+        map-get($palette, 'lemon'),
+        map-get($palette, 'smokegreen')
+      );
+      cursor: pointer;
+      transition: background 0.25s ease 0s;
+
+      @include mq() {
+        padding: 28px 54px 30px 59px;
+      }
+
+      svg {
+        display: block;
+        width: mod_vw(40);
+        height: mod_vw(30);
+
+        @include mq() {
+          width: 27px;
+          height: 20px;
+        }
+
+        &:not(:last-child) {
+          margin-right: mod_vw(20);
+
+          @include mq() {
+            margin-right: 14px;
+          }
+        }
+      }
+
+      &:hover {
+        @include mq() {
+          background-image: linear-gradient(
+            to bottom,
+            map-get($palette, 'lemon'),
+            map-get($palette, 'smokegreen') 70%
+          );
+        }
+
+        &::before {
+          @include mq() {
+            opacity: 0.3;
+          }
+        }
+      }
+
+      &::before {
+        @include mq() {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: map-get($palette, 'white');
+          opacity: 0;
+          transition: opacity 0.25s ease 0s;
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @include mq() {
+    padding: 28px 25px;
+  }
+
+  &__title {
+    @include typo(40, 126, 20, 22);
+
+    color: map-get($palette, 'white');
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+
+    &:not(:last-child) {
+      margin-right: mod_vw(24);
+
+      @include mq() {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__sub-title {
+    @include typo(20, 30, 20, 30);
+
+    color: map-get($palette, 'white');
+    font-weight: 500;
+  }
+
+  &__icon {
+    @include mq() {
+      width: 11px;
+      margin-left: 10px;
+      transform: rotate(90deg);
+    }
+  }
+
+  // 下線
+  &::after {
+    @include mq() {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      width: 80%;
+      height: 2px;
+      background-color: map-get($palette, 'white');
+      transform: translateX(-50%) scaleX(0);
+      transition: transform 0.25s ease 0s;
+      content: '';
+    }
+  }
+
+  &:hover {
+    &::after {
+      @include mq() {
+        transform: translateX(-50%) scaleX(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.component {
+  position: relative;
+  padding: mod_vw(80) 0 0;
+
+  @include mq() {
+    padding: 102px 0 0;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: mod_vw(210);
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(map-get($palette, 'dirtyblue'), 0.3)
+    );
+    mix-blend-mode: multiply;
+    content: '';
+
+    @include mq() {
+      height: 210px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__column-header {
+    @include mq() {
+      top: 26px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(88);
+
+      @include mq() {
+        margin-bottom: 87px;
+      }
+    }
+  }
+
+  &__title {
+    @include typo(42, 52, 48, 90);
+
+    color: map-get($palette, 'white');
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(40);
+
+      @include mq() {
+        margin-bottom: 63px;
+      }
+    }
+  }
+
+  &__text {
+    @include typo(24, 48, 24, 48);
+
+    color: map-get($palette, 'white');
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+
+  &__images {
+    width: 100%;
+  }
+}

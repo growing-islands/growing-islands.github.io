@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/contract-development/MainVisual Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <header>
+          <h1>
+            共創する受託開発
+          </h1>
+          <p>
+            Co-Creation
+Contract Development
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+  <div
+    class="tablet:hidden"
+    style="mix-blend-mode: multiply;"
+  >
+    <img
+      alt="共創する受託開発のイメージ"
+      height="297"
+      layout="responsive"
+      placeholder="blur"
+      src="test-file-stub"
+      width="375"
+    />
+  </div>
+  <div
+    class="hidden tablet:block"
+    style="mix-blend-mode: multiply;"
+  >
+    <img
+      alt="共創する受託開発のイメージ"
+      height="594"
+      layout="responsive"
+      placeholder="blur"
+      src="test-file-stub"
+      width="1920"
+    />
+  </div>
+</DocumentFragment>
+`;

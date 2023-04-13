@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ses/BusinessSummary Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    id="business-summary"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <div
+          class="hidden tablet:block"
+          data-testid="component"
+        >
+          <div
+            class=""
+          >
+            <div>
+              <span
+                translate="no"
+              >
+                Business Summary
+              </span>
+              <hr />
+              <span>
+                事業概要
+              </span>
+            </div>
+          </div>
+        </div>
+        <header
+          data-aos="fade-up"
+        >
+          <h2>
+            事業概要
+          </h2>
+          <p>
+            弊社代表はエンジニアとして15年、様々な現場に携わっており、
+            <br
+              class="hidden tablet:inline-block"
+            />
+            今も現役エンジニアとして活動しております。
+            <br />
+            その経験をもとに、現場でお仕事をするエンジニア様の要望や、
+            <br
+              class="hidden tablet:inline-block"
+            />
+            エンジニアを求める企業様のご希望まで共にしっかりと把握し、
+            <br
+              class="hidden tablet:inline-block"
+            />
+            手厚いマネジメントを行う事で長期継続の案件を数多く保有、
+            <br
+              class="hidden tablet:inline-block"
+            />
+            ハイレベルエンジニア様のご紹介も可能としております。
+          </p>
+        </header>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

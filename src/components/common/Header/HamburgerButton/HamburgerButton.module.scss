@@ -1,0 +1,63 @@
+.component {
+  position: relative;
+  z-index: map-get($z-index, 'hamburger');
+  display: block;
+  width: mod_vw(50);
+  height: mod_vw(32);
+  cursor: pointer;
+
+  @include mq() {
+    width: 45px;
+    height: 30px;
+  }
+
+  span,
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: mod_vw(2);
+    background-color: map-get($palette, 'white');
+    transition: transform 0.25s ease 0s;
+
+    @include mq() {
+      height: 4px;
+    }
+  }
+
+  span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+    transform-origin: left top;
+  }
+
+  &::after {
+    bottom: 0;
+    transform-origin: left bottom;
+  }
+
+  &.is-active {
+    span {
+      transform: translateY(-50%) scaleX(0);
+    }
+
+    &::before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(50%) rotate(-45deg);
+    }
+  }
+}

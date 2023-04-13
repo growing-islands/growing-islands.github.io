@@ -1,0 +1,32 @@
+.component {
+  position: relative;
+  padding: mod_vw(100) 0;
+  background-color: map-get($palette, 'lightgray');
+
+  @include mq() {
+    padding: 61px 0 120px;
+  }
+
+  &__header {
+    &:not(:last-child) {
+      margin-bottom: mod_vw(89);
+
+      @include mq() {
+        margin-bottom: 88px;
+      }
+    }
+  }
+}
+
+.header {
+  &__text {
+    @include typo(24, 48, 24, 48);
+
+    margin-top: mod_vw(59);
+    color: map-get($palette, 'deepblue');
+
+    @include mq() {
+      margin-top: 55px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ses/Voice Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+    id="voice"
+  >
+    <div
+      class="l-wrap"
+    >
+      <div
+        class="l-inner"
+      >
+        <div
+          class="hidden tablet:block"
+          data-testid="component"
+        >
+          <div
+            class=""
+          >
+            <div>
+              <span
+                translate="no"
+              >
+                Voice
+              </span>
+              <hr />
+              <span>
+                稼働エンジニア様の声
+              </span>
+            </div>
+          </div>
+        </div>
+        <header
+          data-aos="fade-up"
+        >
+          <h2>
+            稼働エンジニア様の声
+          </h2>
+        </header>
+        <ul>
+          <li
+            data-aos="fade-up"
+          >
+            <div
+              class=""
+            >
+              <div>
+                <div>
+                  <img
+                    layout="responsive"
+                    placeholder="blur"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3
+                  class=""
+                  data-testid="component"
+                >
+                  柔軟な案件と安心のサポートで未来志向に
+                </h3>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  R.Y様　バックエンドエンジニア
+経験19年
+                </p>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  参画案件は結果を出していれば自分のペースで仕事ができて、無理な要求もありません。
+しかもグローイングアイランズさんは定期的に現場まで来て頂けるので、悩みがあればすぐに相談できるのでとても助かります。
+もし今の現場が終了となった場合でも、すぐ別案件を紹介頂けるという安心感もすごいです（笑）
+また、技術的な相談ができるのも大きなメリットで、「今後お互いこの方向性でいこう」という未来志向のワクワクする話でモチベーションアップにもつながります！
+将来的にはエンジニア以外の仕事でも結果を出せるように色々と挑戦して行きたいです！
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            data-aos="fade-up"
+          >
+            <div
+              class=""
+            >
+              <div>
+                <div>
+                  <img
+                    layout="responsive"
+                    placeholder="blur"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div>
+                <h3
+                  class=""
+                  data-testid="component"
+                >
+                  信頼と成長で次のステップにも視野に
+                </h3>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  S.T様　バックエンドエンジニア
+経験13年
+                </p>
+                <p
+                  class=""
+                  data-testid="component"
+                >
+                  前職の経歴なども含め相談に乗ってもらい、自分のスキルにマッチした案件を紹介いただきました！
+プロジェクトメンバーの技術スキル水準はもちろん、スピード感・モチベーションも高く、とても成長できる案件です。
+グローイングアイランズさんは業務連絡以外にも(web)懇親会を開催するなど、コミュニケーションも大事にされる会社でとても働きやすいです。
+現在バックエンドが中心ですが、知識の幅を広げフロントエンド技術も習得し今後のキャリアに活かしたいと考えています！
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

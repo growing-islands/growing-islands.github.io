@@ -1,0 +1,61 @@
+.component {
+  padding: mod_vw(350) 0;
+  background-image: linear-gradient(
+    to bottom,
+    map-get($palette, 'deepblue'),
+    map-get($palette, 'emeraldgreen')
+  );
+
+  @include mq() {
+    padding: 300px 0;
+  }
+
+  &__header {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(60);
+
+      @include mq() {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__title {
+    @include typo(80, 96, 60, 72);
+
+    color: map-get($palette, 'white');
+    font-weight: 600;
+    white-space: pre-wrap;
+  }
+
+  &__text {
+    @include typo(40, 60, 20, 30);
+
+    color: map-get($palette, 'white');
+    font-weight: 400;
+    white-space: pre-wrap;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: mod_vw(40);
+
+      @include mq() {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__buttons-wrap {
+    text-align: center;
+  }
+
+  &__button {
+    width: mod_vw(240);
+
+    @include mq() {
+      width: 400px;
+    }
+  }
+}

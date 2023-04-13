@@ -1,0 +1,146 @@
+.component {
+  $this: #{&};
+
+  padding: mod_vw(3);
+  background-image: linear-gradient(
+    to bottom,
+    map-get($palette, 'pastelgreen'),
+    map-get($palette, 'deepblue')
+  );
+  cursor: pointer;
+
+  @include mq() {
+    padding: 3px;
+  }
+
+  &__inner {
+    background-color: map-get($palette, 'white');
+  }
+
+  &__label {
+    @include typo(36, 36, 36, 36);
+
+    display: inline-block;
+    color: map-get($palette, 'deepblue');
+    font-weight: 400;
+
+    @include mq() {
+      margin-top: 2px;
+    }
+
+    &:not(:last-child) {
+      margin-right: mod_vw(20);
+
+      @include mq() {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    padding: mod_vw(23) mod_vw(74) mod_vw(30) mod_vw(20);
+
+    @include mq() {
+      padding: 13px 100px 13px 26px;
+    }
+  }
+
+  &__question {
+    @include typo(24, 42, 24, 48);
+
+    color: map-get($palette, 'deepblue');
+    white-space: pre-wrap;
+  }
+
+  &__answer {
+    @include typo(24, 42, 18, 32);
+
+    color: map-get($palette, 'deepblue');
+    white-space: pre-wrap;
+
+    @include mq() {
+      padding-top: 5px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    padding: mod_vw(10) mod_vw(74) mod_vw(21) mod_vw(20);
+
+    @include mq() {
+      padding: 30px 100px 34px 26px;
+    }
+
+    #{$this} {
+      &__label {
+        padding-left: mod_vw(5);
+
+        @include mq() {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: mod_vw(28);
+    right: mod_vw(26);
+    width: mod_vw(30);
+    height: mod_vw(30);
+    transform-origin: center center;
+    transition: transform 0.25s ease 0s;
+
+    @include mq() {
+      top: 25px;
+      right: 34px;
+      width: 30px;
+      height: 30px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: map-get($palette, 'deepblue');
+      transform: translate(-50%, -50%);
+      content: '';
+    }
+
+    &::before {
+      width: 100%;
+      height: mod_vw(4);
+      opacity: 1;
+      transition: opacity 0.25s ease 0s;
+
+      @include mq() {
+        height: 4px;
+      }
+    }
+
+    &::after {
+      width: mod_vw(4);
+      height: 100%;
+
+      @include mq() {
+        width: 4px;
+      }
+    }
+
+    &.is-opened {
+      transform: rotate(90deg);
+
+      &::before {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__toggle {
+    transition: height 0.25s ease 0s;
+    will-change: height;
+  }
+}
