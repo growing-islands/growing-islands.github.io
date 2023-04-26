@@ -19,7 +19,8 @@
     "test": "jest --watch",
     "test-all": "yarn eslint && yarn format && yarn stylelint && yarn test",
     "analyze": "cross-env ANALYZE=true next build",
-    "export": "yarn build && next export -o docs"
+    "nojekyll": "touch docs/.nojekyll",
+    "export": "yarn build && next export -o docs && yarn nojekyll"
   },
   "husky": {
     "hooks": {
