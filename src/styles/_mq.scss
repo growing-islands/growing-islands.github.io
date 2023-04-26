@@ -263,9 +263,9 @@ $mq-media-type: all !default;
       $and==false and
       $min-width
       <=$target-width and
-        ($until==false or $max-width >=$target-width) and
-        $media-type !=
-        'print'
+      ($until==false or $max-width >=$target-width) and
+      $media-type !=
+      'print'
     ) {
       @content;
     }

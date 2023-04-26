@@ -3,7 +3,7 @@ import type { CSSProperties } from 'react'
 import type { dataProperty } from 'aos'
 
 // components
-import { SymbolMark } from '~components/common/Icons/Logo'
+import { SymbolMark } from '~/components/common/Icons/Logo'
 
 // unique
 import * as styles from './WithSymbolHeading.module.scss'

@@ -3,7 +3,7 @@ import { default as classnames } from 'classnames'
 
 // components
 import { ColumnHeadingForSection } from '~components/common/Heading/ColumnHeadingForSection'
-import { SymbolMark } from '~components/common/Icons/Logo'
+import { SymbolMark } from '~/components/common/Icons/Logo'
 
 // scss
 import * as styles from './Advantage.module.scss'

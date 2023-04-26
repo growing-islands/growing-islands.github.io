@@ -2,7 +2,7 @@ import { Image } from '~components/common/Image'
 import { default as classnames } from 'classnames'
 
 // components
-import { SymbolMark } from '~components/common/Icons/Logo'
+import { SymbolMark } from '~/components/common/Icons/Logo'
 import { ColumnHeadingForSection } from '~components/common/Heading/ColumnHeadingForSection'
 
 // scss
