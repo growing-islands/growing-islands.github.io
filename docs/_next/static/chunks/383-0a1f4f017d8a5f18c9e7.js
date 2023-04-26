@@ -1,5 +1,5 @@
 ;(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
-  [943],
+  [383],
   {
     39471: function () {},
     53723: function () {},
@@ -891,81 +891,6 @@
         )
       }
     },
-    44586: function (e, t, n) {
-      'use strict'
-      var i
-      n.d(t, {
-        Z: function () {
-          return p
-        },
-      })
-      var s = new Uint8Array(16)
-      function r() {
-        if (
-          !i &&
-          !(i =
-            ('undefined' !== typeof crypto &&
-              crypto.getRandomValues &&
-              crypto.getRandomValues.bind(crypto)) ||
-            ('undefined' !== typeof msCrypto &&
-              'function' === typeof msCrypto.getRandomValues &&
-              msCrypto.getRandomValues.bind(msCrypto)))
-        )
-          throw new Error(
-            'crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported'
-          )
-        return i(s)
-      }
-      var a =
-        /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i
-      for (
-        var o = function (e) {
-            return 'string' === typeof e && a.test(e)
-          },
-          l = [],
-          d = 0;
-        d < 256;
-        ++d
-      )
-        l.push((d + 256).toString(16).substr(1))
-      var c = function (e) {
-        var t =
-            arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-          n = (
-            l[e[t + 0]] +
-            l[e[t + 1]] +
-            l[e[t + 2]] +
-            l[e[t + 3]] +
-            '-' +
-            l[e[t + 4]] +
-            l[e[t + 5]] +
-            '-' +
-            l[e[t + 6]] +
-            l[e[t + 7]] +
-            '-' +
-            l[e[t + 8]] +
-            l[e[t + 9]] +
-            '-' +
-            l[e[t + 10]] +
-            l[e[t + 11]] +
-            l[e[t + 12]] +
-            l[e[t + 13]] +
-            l[e[t + 14]] +
-            l[e[t + 15]]
-          ).toLowerCase()
-        if (!o(n)) throw TypeError('Stringified UUID is invalid')
-        return n
-      }
-      var p = function (e, t, n) {
-        var i = (e = e || {}).random || (e.rng || r)()
-        if (((i[6] = (15 & i[6]) | 64), (i[8] = (63 & i[8]) | 128), t)) {
-          n = n || 0
-          for (var s = 0; s < 16; ++s) t[n + s] = i[s]
-          return t
-        }
-        return c(i)
-      }
-    },
     51801: function (e, t, n) {
       'use strict'
       n.d(t, {
@@ -1332,8 +1257,8 @@
             A = (0, i.useRef)(null),
             j = (0, i.useRef)(null),
             {
-              params: D,
-              passedParams: N,
+              params: N,
+              passedParams: D,
               rest: R,
               events: G,
             } = (function (e = {}) {
@@ -1367,20 +1292,20 @@
               k(!O)
             }
           if (
-            (Object.assign(D.on, {
+            (Object.assign(N.on, {
               _containerClasses(e, t) {
                 E(t)
               },
             }),
             !M.current &&
-              (Object.assign(D.on, G),
+              (Object.assign(N.on, G),
               (C = !0),
               ($.current = (function (e) {
                 return new s.ZP(e)
-              })(D)),
+              })(N)),
               ($.current.loopCreate = () => {}),
               ($.current.loopDestroy = () => {}),
-              D.loop && ($.current.loopedSlides = u(B, D)),
+              N.loop && ($.current.loopedSlides = u(B, N)),
               $.current.virtual && $.current.params.virtual.enabled))
           ) {
             $.current.virtual.slides = B
@@ -1442,7 +1367,7 @@
                       scrollbarEl: j.current,
                       swiper: $.current,
                     },
-                    D
+                    N
                   ),
                   y && y($.current),
                   () => {
@@ -1490,9 +1415,9 @@
                     }),
                   s
                 )
-              })(N, _.current, B, L.current)
+              })(D, _.current, B, L.current)
               return (
-                (_.current = N),
+                (_.current = D),
                 (L.current = B),
                 e.length &&
                   $.current &&
@@ -1500,7 +1425,7 @@
                   m({
                     swiper: $.current,
                     slides: B,
-                    passedParams: N,
+                    passedParams: D,
                     changedParams: e,
                     nextEl: I.current,
                     prevEl: z.current,
@@ -1535,7 +1460,7 @@
               t,
               v({ ref: M, className: c(`${S}${e ? ` ${e}` : ''}`) }, R),
               V['container-start'],
-              o(D) &&
+              o(N) &&
                 i.createElement(
                   i.Fragment,
                   null,
@@ -1548,12 +1473,12 @@
                     className: 'swiper-button-next',
                   })
                 ),
-              d(D) &&
+              d(N) &&
                 i.createElement('div', {
                   ref: j,
                   className: 'swiper-scrollbar',
                 }),
-              l(D) &&
+              l(N) &&
                 i.createElement('div', {
                   ref: A,
                   className: 'swiper-pagination',
@@ -1562,7 +1487,7 @@
                 n,
                 { className: 'swiper-wrapper' },
                 V['wrapper-start'],
-                D.virtual
+                N.virtual
                   ? (function (e, t, n) {
                       if (!n) return null
                       const s = e.isHorizontal()
@@ -1576,7 +1501,7 @@
                         .filter((e, t) => t >= n.from && t <= n.to)
                         .map((t) => i.cloneElement(t, { swiper: e, style: s }))
                     })($.current, B, T)
-                  : !D.loop || ($.current && $.current.destroyed)
+                  : !N.loop || ($.current && $.current.destroyed)
                   ? B.map((e) => i.cloneElement(e, { swiper: $.current }))
                   : (function (e, t, n) {
                       const s = t.map((t, n) =>
@@ -1620,7 +1545,7 @@
                         e && (e.loopedSlides = a),
                         [...o, ...s, ...l]
                       )
-                    })($.current, B, D),
+                    })($.current, B, N),
                 V['wrapper-end']
               ),
               V['container-end']
@@ -3056,7 +2981,7 @@
               t.animating &&
               (e.stopPropagation(), e.stopImmediatePropagation())))
       }
-      function D() {
+      function N() {
         const e = this,
           { wrapperEl: t, rtlTranslate: n, enabled: i } = e
         if (!i) return
@@ -3073,7 +2998,7 @@
           s !== e.progress && e.updateProgress(n ? -e.translate : e.translate),
           e.emit('setTranslate', e.translate, !1)
       }
-      let N = !1
+      let D = !1
       function R() {}
       const G = (e, t) => {
         const n = a(),
@@ -4287,11 +4212,11 @@
               ;(e.onTouchStart = L.bind(e)),
                 (e.onTouchMove = I.bind(e)),
                 (e.onTouchEnd = z.bind(e)),
-                n.cssMode && (e.onScroll = D.bind(e)),
+                n.cssMode && (e.onScroll = N.bind(e)),
                 (e.onClick = j.bind(e)),
                 i.touch &&
-                  !N &&
-                  (t.addEventListener('touchstart', R), (N = !0)),
+                  !D &&
+                  (t.addEventListener('touchstart', R), (D = !0)),
                 G(e, 'on')
             },
             detachEvents: function () {

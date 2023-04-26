@@ -1,14 +1,14 @@
-;(self.__BUILD_MANIFEST = (function (s, c, a, e, t, d) {
+;(self.__BUILD_MANIFEST = (function (s, c, a, e, t, f) {
   return {
     __rewrites: { beforeFiles: [], afterFiles: [], fallback: [] },
     '/': [
       s,
       e,
-      'static/chunks/798-615514ae5756ae77ac16.js',
+      'static/chunks/844-ebb09807cf08974b683d.js',
       c,
       a,
-      'static/css/2e8bdd235bf7ec985c46.css',
-      'static/chunks/pages/index-f8cdea9de0fa94f987c6.js',
+      'static/css/b4fc6c83b9848d2f830e.css',
+      'static/chunks/pages/index-8bfb82354f8c36bf3f3a.js',
     ],
     '/_error': [
       s,
@@ -23,19 +23,19 @@
       c,
       a,
       t,
-      d,
+      f,
       'static/css/371f1c97162d0ac2f7e8.css',
       'static/chunks/pages/contract-development-8625a20a0e003b5ca6d7.js',
     ],
     '/ses': [
       s,
-      'static/chunks/943-5210b79cbea64e81c402.js',
+      'static/chunks/383-0a1f4f017d8a5f18c9e7.js',
       c,
       a,
       t,
-      d,
-      'static/css/bd859ef0739d5de199a7.css',
-      'static/chunks/pages/ses-4a3f7f69f5955a675e5d.js',
+      f,
+      'static/css/36c13915477deb369348.css',
+      'static/chunks/pages/ses-016fd7994c24852fe6af.js',
     ],
     sortedPages: ['/', '/_app', '/_error', '/contract-development', '/ses'],
   }

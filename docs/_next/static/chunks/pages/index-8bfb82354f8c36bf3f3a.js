@@ -5,13 +5,13 @@
       'use strict'
       a.d(t, {
         q: function () {
-          return d
+          return _
         },
       })
       var l = a(94184),
         n = a.n(l),
-        r = a(26868),
-        s = a.n(r),
+        s = a(26868),
+        r = a.n(s),
         i = a(26290),
         c = a(58174),
         o = {
@@ -88,7 +88,7 @@
           },
         },
         p = a(85893),
-        d = function (e) {
+        _ = function (e) {
           var t = e.className,
             a = e.style,
             l = (0, i.F)()
@@ -99,14 +99,14 @@
               className: c.component__particles,
               children:
                 'pc' === l
-                  ? (0, p.jsx)(s(), {
+                  ? (0, p.jsx)(r(), {
                       className: c.component__particle,
                       canvasClassName: c.component__canvas,
                       width: '100%',
                       height: '100%',
                       options: o.pc,
                     })
-                  : (0, p.jsx)(s(), {
+                  : (0, p.jsx)(r(), {
                       className: c.component__particle,
                       canvasClassName: c.component__canvas,
                       width: '100%',
@@ -126,23 +126,23 @@
       })
       var l = a(92809),
         n = a(67294),
-        r = a(94700),
-        s = a(84956),
+        s = a(94700),
+        r = a(84956),
         i = a(13340),
         c = a(67597),
         o = a(94184),
         p = a.n(o),
-        d = a(66261),
-        _ = a(22608),
+        _ = a(66261),
+        d = a(22608),
         m = a(85893),
         u = function (e) {
           var t = e.className,
             a = e.style
           return (0, m.jsx)('button', {
-            className: p()(_.component, t),
+            className: p()(d.component, t),
             style: a,
             onClick: function () {
-              d.NY.scrollToTop({ smooth: !0, duration: 1e3 })
+              _.NY.scrollToTop({ smooth: !0, duration: 1e3 })
             },
           })
         }
@@ -180,11 +180,11 @@
       var f = function (e) {
         var t = e.className,
           a = e.style,
-          l = (0, r.Z)(0, 0).height,
-          o = (0, s.Z)(),
+          l = (0, s.Z)(0, 0).height,
+          o = (0, r.Z)(),
           p = (0, n.useState)(!1),
-          d = p[0],
-          _ = p[1]
+          _ = p[0],
+          d = p[1]
         return o() && l > 0
           ? (0, m.jsx)(i.$, {
               className: t,
@@ -192,13 +192,13 @@
               absoluteBottom: 50,
               style: h(h({}, a), {}, { left: 'auto', right: '68px' }),
               onUntil: function () {
-                return _(!1)
+                return d(!1)
               },
               onFixed: function () {
-                return _(!0)
+                return d(!0)
               },
               children: (0, m.jsx)(c.V, {
-                visible: d,
+                visible: _,
                 children: (0, m.jsx)(u, {}),
               }),
             })
@@ -214,17 +214,17 @@
       })
       var l = a(94184),
         n = a.n(l),
-        r = a(52671),
-        s = a(85893),
+        s = a(52671),
+        r = a(85893),
         i = function (e) {
           var t = e.children,
             a = e.className,
             l = e.style,
             i = e.visible
-          return (0, s.jsx)('div', {
+          return (0, r.jsx)('div', {
             className: n()(
-              r.component,
-              i ? r['is-visible'] : r['is-hidden'],
+              s.component,
+              i ? s['is-visible'] : s['is-hidden'],
               a && a
             ),
             style: l,
@@ -241,20 +241,20 @@
       })
       var l = a(92809),
         n = a(10219),
-        r = a(94184),
-        s = a.n(r),
+        s = a(94184),
+        r = a.n(s),
         i = a(80318),
         c = a(70131),
         o = a(81265),
         p = a(85893),
-        d = function (e) {
+        _ = function (e) {
           var t = e.className,
             a = e.style,
             l = e.texts,
             n = e.textColor,
-            r = void 0 === n ? o['palette-white'] : n,
-            d = e.borderColor,
-            _ = void 0 === d ? o['palette-smokegray'] : d,
+            s = void 0 === n ? o['palette-white'] : n,
+            _ = e.borderColor,
+            d = void 0 === _ ? o['palette-smokegray'] : _,
             m = (0, c.YD)({
               root: null,
               rootMargin: '0px 0px -30%',
@@ -266,8 +266,8 @@
             h = u[1]
           return (0, p.jsx)('div', {
             ref: b,
-            className: s()(o.component, t, h && o['is-active']),
-            style: Object.assign(a || {}, { '--text-color': r }),
+            className: r()(o.component, t, h && o['is-active']),
+            style: Object.assign(a || {}, { '--text-color': s }),
             children: (0, p.jsxs)('div', {
               className: o.component__inner,
               children: [
@@ -278,7 +278,7 @@
                 }),
                 (0, p.jsx)('hr', {
                   className: o.component__border,
-                  style: { '--border-color': _ },
+                  style: { '--border-color': d },
                 }),
                 (0, p.jsx)('span', {
                   className: o.component__japanese,
@@ -288,7 +288,7 @@
             }),
           })
         },
-        _ = a(4336),
+        d = a(4336),
         m = ['className', 'style']
       function u(e, t) {
         var a = Object.keys(e)
@@ -326,11 +326,11 @@
           a = e.style,
           l = (0, n.Z)(e, m)
         return (0, p.jsx)('div', {
-          className: s()(_.component, t),
+          className: r()(d.component, t),
           style: a,
           children: (0, p.jsx)(
-            d,
-            b({ className: _.component__content }, b({}, l))
+            _,
+            b({ className: d.component__content }, b({}, l))
           ),
         })
       }
@@ -339,216 +339,19 @@
       'use strict'
       a.d(t, {
         Z: function () {
-          return m
+          return s
         },
       })
-      var l = a(92809),
-        n = a(10219),
-        r = a(67294),
-        s = a(44586),
-        i = a(89819),
-        c = a(85893),
-        o = ['primaryColor', 'shadowColor', 'gradient']
-      function p(e, t) {
-        var a = Object.keys(e)
-        if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e)
-          t &&
-            (l = l.filter(function (t) {
-              return Object.getOwnPropertyDescriptor(e, t).enumerable
-            })),
-            a.push.apply(a, l)
-        }
-        return a
+      a(67294)
+      var l = a(77529),
+        n = a(85893)
+      var s = function () {
+        return (0, n.jsx)(l.E, {
+          src: '/shimax1_bl.png',
+          alt: '\u30b0\u30ed\u30fc\u30a4\u30f3\u30b0\u30a2\u30a4\u30e9\u30f3\u30ba',
+          width: '100px',
+        })
       }
-      function d(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var a = null != arguments[t] ? arguments[t] : {}
-          t % 2
-            ? p(Object(a), !0).forEach(function (t) {
-                ;(0, l.Z)(e, t, a[t])
-              })
-            : Object.getOwnPropertyDescriptors
-            ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : p(Object(a)).forEach(function (t) {
-                Object.defineProperty(
-                  e,
-                  t,
-                  Object.getOwnPropertyDescriptor(a, t)
-                )
-              })
-        }
-        return e
-      }
-      var _ = function (e) {
-          var t = e.primaryColor,
-            a = void 0 === t ? i['palette-mintblue'] : t,
-            l = e.shadowColor,
-            n = void 0 === l ? i['palette-smokegray'] : l,
-            o = e.gradient,
-            p = void 0 !== o && o,
-            d = (0, r.useState)(),
-            _ = d[0],
-            m = d[1]
-          return (
-            (0, r.useEffect)(function () {
-              m((0, s.Z)())
-            }, []),
-            (0, c.jsxs)(c.Fragment, {
-              children: [
-                p &&
-                  (0, c.jsxs)(c.Fragment, {
-                    children: [
-                      (0, c.jsxs)('defs', {
-                        children: [
-                          (0, c.jsxs)('linearGradient', {
-                            id: 'gradient-1-'.concat(_),
-                            x1: '0',
-                            x2: '0',
-                            y1: '0',
-                            y2: '1',
-                            children: [
-                              (0, c.jsx)('stop', {
-                                offset: '0.5',
-                                stopColor: 'white',
-                                stopOpacity: '0',
-                              }),
-                              (0, c.jsx)('stop', {
-                                offset: '1',
-                                stopColor: 'white',
-                                stopOpacity: '1',
-                              }),
-                            ],
-                          }),
-                          (0, c.jsxs)('linearGradient', {
-                            id: 'gradient-2-'.concat(_),
-                            x1: '0',
-                            x2: '0',
-                            y1: '0',
-                            y2: '1',
-                            children: [
-                              (0, c.jsx)('stop', {
-                                offset: '0',
-                                stopColor: 'white',
-                                stopOpacity: '0',
-                              }),
-                              (0, c.jsx)('stop', {
-                                offset: '0.5',
-                                stopColor: 'white',
-                                stopOpacity: '1',
-                              }),
-                            ],
-                          }),
-                          (0, c.jsx)('mask', {
-                            id: 'mask-1-'.concat(_),
-                            children: (0, c.jsx)('rect', {
-                              x: '0',
-                              y: '0',
-                              width: '15.63',
-                              height: '17.45',
-                              fill: 'url(#gradient-1-'.concat(_, ')'),
-                            }),
-                          }),
-                          (0, c.jsx)('mask', {
-                            id: 'mask-2-'.concat(_),
-                            children: (0, c.jsx)('rect', {
-                              x: '0',
-                              y: '0',
-                              width: '15.63',
-                              height: '17.45',
-                              fill: 'url(#gradient-2-'.concat(_, ')'),
-                            }),
-                          }),
-                        ],
-                      }),
-                      (0, c.jsxs)('g', {
-                        fill: i['palette-pastelgreen'],
-                        children: [
-                          (0, c.jsx)('path', {
-                            d: 'M15.63,2a2,2,0,1,1-2-2A2,2,0,0,1,15.63,2Z',
-                          }),
-                          (0, c.jsx)('path', {
-                            d: 'M11.54,7l.32.27a1.73,1.73,0,0,0,.48-1.21,1.78,1.78,0,0,0-1.78-1.78A1.8,1.8,0,0,0,9,5.22l.2.14Z',
-                          }),
-                          (0, c.jsx)('path', {
-                            d: 'M11.86,7.3a1.75,1.75,0,0,1-1.3.57A1.78,1.78,0,0,1,8.78,6.09,1.81,1.81,0,0,1,9,5.22L6.87,3.69A2.62,2.62,0,0,0,4.1,3.42a2.65,2.65,0,0,0-.93.8,3.2,3.2,0,0,0-.55,1.84s0,3.59,0,4.53L.88,13A1,1,0,0,0,0,14a1.11,1.11,0,0,0,.48.9L3,16.71a1.07,1.07,0,0,0,1.5-.19,1,1,0,0,0,.15-.78l1.79-2.5,4.21-1.42h0a3.17,3.17,0,0,0,1.57-1.12,2.55,2.55,0,0,0-.36-3.4Zm-1.43,3.87L6,12.66l-2.15,3a.38.38,0,0,1,.08.46.38.38,0,0,1-.53,0L.88,14.34a.38.38,0,0,1-.14-.51.37.37,0,0,1,.46-.07l2.12-2.95V9.94H5c.43,0,.63-.4.22-.79a1.42,1.42,0,0,1,.94-2.49A1.43,1.43,0,0,1,7.54,8.08a1.41,1.41,0,0,1-.48,1.07c-.42.39-.21.79.22.79h4.58A2.32,2.32,0,0,1,10.43,11.17Z',
-                          }),
-                        ],
-                      }),
-                      (0, c.jsxs)('g', {
-                        fill: i['palette-emeraldgreen'],
-                        mask: 'url(#mask-2-'.concat(_, ')'),
-                        children: [
-                          (0, c.jsx)('path', {
-                            d: 'M15.63,2a2,2,0,1,1-2-2A2,2,0,0,1,15.63,2Z',
-                          }),
-                          (0, c.jsx)('path', {
-                            d: 'M11.54,7l.32.27a1.73,1.73,0,0,0,.48-1.21,1.78,1.78,0,0,0-1.78-1.78A1.8,1.8,0,0,0,9,5.22l.2.14Z',
-                          }),
-                          (0, c.jsx)('path', {
-                            d: 'M11.86,7.3a1.75,1.75,0,0,1-1.3.57A1.78,1.78,0,0,1,8.78,6.09,1.81,1.81,0,0,1,9,5.22L6.87,3.69A2.62,2.62,0,0,0,4.1,3.42a2.65,2.65,0,0,0-.93.8,3.2,3.2,0,0,0-.55,1.84s0,3.59,0,4.53L.88,13A1,1,0,0,0,0,14a1.11,1.11,0,0,0,.48.9L3,16.71a1.07,1.07,0,0,0,1.5-.19,1,1,0,0,0,.15-.78l1.79-2.5,4.21-1.42h0a3.17,3.17,0,0,0,1.57-1.12,2.55,2.55,0,0,0-.36-3.4Zm-1.43,3.87L6,12.66l-2.15,3a.38.38,0,0,1,.08.46.38.38,0,0,1-.53,0L.88,14.34a.38.38,0,0,1-.14-.51.37.37,0,0,1,.46-.07l2.12-2.95V9.94H5c.43,0,.63-.4.22-.79a1.42,1.42,0,0,1,.94-2.49A1.43,1.43,0,0,1,7.54,8.08a1.41,1.41,0,0,1-.48,1.07c-.42.39-.21.79.22.79h4.58A2.32,2.32,0,0,1,10.43,11.17Z',
-                          }),
-                        ],
-                      }),
-                    ],
-                  }),
-                (0, c.jsxs)('g', {
-                  fill: a,
-                  mask: p ? 'url(#mask-1-'.concat(_, ')') : void 0,
-                  children: [
-                    (0, c.jsx)('path', {
-                      d: 'M15.63,2a2,2,0,1,1-2-2A2,2,0,0,1,15.63,2Z',
-                    }),
-                    (0, c.jsx)('path', {
-                      d: 'M11.54,7l.32.27a1.73,1.73,0,0,0,.48-1.21,1.78,1.78,0,0,0-1.78-1.78A1.8,1.8,0,0,0,9,5.22l.2.14Z',
-                    }),
-                    (0, c.jsx)('path', {
-                      d: 'M11.86,7.3a1.75,1.75,0,0,1-1.3.57A1.78,1.78,0,0,1,8.78,6.09,1.81,1.81,0,0,1,9,5.22L6.87,3.69A2.62,2.62,0,0,0,4.1,3.42a2.65,2.65,0,0,0-.93.8,3.2,3.2,0,0,0-.55,1.84s0,3.59,0,4.53L.88,13A1,1,0,0,0,0,14a1.11,1.11,0,0,0,.48.9L3,16.71a1.07,1.07,0,0,0,1.5-.19,1,1,0,0,0,.15-.78l1.79-2.5,4.21-1.42h0a3.17,3.17,0,0,0,1.57-1.12,2.55,2.55,0,0,0-.36-3.4Zm-1.43,3.87L6,12.66l-2.15,3a.38.38,0,0,1,.08.46.38.38,0,0,1-.53,0L.88,14.34a.38.38,0,0,1-.14-.51.37.37,0,0,1,.46-.07l2.12-2.95V9.94H5c.43,0,.63-.4.22-.79a1.42,1.42,0,0,1,.94-2.49A1.43,1.43,0,0,1,7.54,8.08a1.41,1.41,0,0,1-.48,1.07c-.42.39-.21.79.22.79h4.58A2.32,2.32,0,0,1,10.43,11.17Z',
-                    }),
-                  ],
-                }),
-                (0, c.jsx)('ellipse', {
-                  fill: n,
-                  cx: '7.1',
-                  cy: '16.93',
-                  rx: '4.43',
-                  ry: '0.52',
-                }),
-              ],
-            })
-          )
-        },
-        m = function (e) {
-          var t = e.primaryColor,
-            a = void 0 === t ? i['palette-mintblue'] : t,
-            l = e.shadowColor,
-            r = void 0 === l ? i['palette-smokegray'] : l,
-            s = e.gradient,
-            p = void 0 !== s && s,
-            m = (0, n.Z)(e, o)
-          return (0, c.jsx)(
-            'svg',
-            d(
-              d(
-                {
-                  xmlns: 'http://www.w3.org/2000/svg',
-                  viewBox: '0 0 15.63 17.45',
-                  'aria-label':
-                    '\u682a\u5f0f\u4f1a\u793e\u30b0\u30ed\u30fc\u30a4\u30f3\u30b0\u30a2\u30a4\u30e9\u30f3\u30ba\u306e\u30ed\u30b4\u30b7\u30f3\u30dc\u30eb',
-                },
-                d({}, m)
-              ),
-              {},
-              {
-                children: (0, c.jsx)(_, {
-                  primaryColor: a,
-                  shadowColor: r,
-                  gradient: p,
-                }),
-              }
-            )
-          )
-        }
     },
     13340: function (e, t, a) {
       'use strict'
@@ -559,8 +362,8 @@
       })
       var l = a(67294),
         n = a(94184),
-        r = a.n(n)
-      var s = a(37699),
+        s = a.n(n)
+      var r = a(37699),
         i = a(85893),
         c = function (e) {
           var t = e.children,
@@ -569,8 +372,8 @@
             c = e.fixedTop,
             o = void 0 === c ? 0 : c,
             p = e.absoluteBottom,
-            d = void 0 === p ? 0 : p,
-            _ = e.endStyle,
+            _ = void 0 === p ? 0 : p,
+            d = e.endStyle,
             m = e.onFixed,
             u = e.onUntil,
             b = e.onEnd,
@@ -592,7 +395,7 @@
                 : 0) +
                 j() -
                 o -
-                d -
+                _ -
                 x.current.clientHeight <=
               window.pageYOffset
                 ? (g('end'), b && b())
@@ -615,19 +418,19 @@
                   }
                 )
               },
-              [o, d]
+              [o, _]
             )
           var v = {
             top: 'end' !== f ? o : 'auto',
-            bottom: 'end' === f ? d : '',
+            bottom: 'end' === f ? _ : '',
           }
           return (0, i.jsx)('div', {
             ref: x,
-            style: Object.assign(v, n || {}, 'end' === f && _ && _),
-            className: r()(
-              s.component,
-              'active' === f && s['is-fixed'],
-              'end' === f && s['is-end'],
+            style: Object.assign(v, n || {}, 'end' === f && d && d),
+            className: s()(
+              r.component,
+              'active' === f && r['is-fixed'],
+              'end' === f && r['is-end'],
               a && a
             ),
             children: t,
@@ -653,14 +456,14 @@
         })
       var l = a(80318),
         n = a(11163),
-        r = a(67294),
-        s = a(66261),
+        s = a(67294),
+        r = a(66261),
         i = a(70131),
         c = a(41113)
       var o = a(26290),
         p = a(25354),
-        d = a(36100),
-        _ = a(39165),
+        _ = a(36100),
+        d = a(39165),
         m = a(26),
         u = a(53960),
         b = a(84150),
@@ -672,7 +475,7 @@
         y =
           '/_next/static/image/src/images/top/img-mv-object.515f2f6ec90eae4e73007dbdeb230442.png',
         v = a(85893),
-        w = function (e) {
+        N = function (e) {
           var t = e.className,
             a = e.style
           return (0, v.jsx)('div', {
@@ -752,12 +555,12 @@
             }),
           })
         },
-        N = a(32573),
+        w = a(32573),
         k = a(93722),
         A = a(33807),
-        O =
-          '/_next/static/image/src/images/top/illust-idea.f76c7aaf343cbd568f9f705a94c3e06b.png',
         C =
+          '/_next/static/image/src/images/top/illust-idea.f76c7aaf343cbd568f9f705a94c3e06b.png',
+        O =
           '/_next/static/image/src/images/top/illust-goal.cb52e2886f0445f4ee0d34552112dc97.png',
         S = function (e) {
           var t = e.className,
@@ -815,7 +618,7 @@
                               }),
                               (0, v.jsx)('div', {
                                 className: A.item__image,
-                                children: (0, v.jsx)(N.Z, {
+                                children: (0, v.jsx)(w.Z, {
                                   className: A.item__svg,
                                 }),
                               }),
@@ -844,7 +647,7 @@
                               (0, v.jsx)('div', {
                                 className: A.item__image,
                                 children: (0, v.jsx)(f.E, {
-                                  src: O,
+                                  src: C,
                                   alt: 'IDEA\u3001\u5171\u5275\u306e\u30a4\u30e9\u30b9\u30c8',
                                   width: 124,
                                   height: 126,
@@ -875,7 +678,7 @@
                               (0, v.jsx)('div', {
                                 className: A.item__image,
                                 children: (0, v.jsx)(f.E, {
-                                  src: C,
+                                  src: O,
                                   alt: 'GOAL\u3001\u76ee\u6a19\u306e\u30a4\u30e9\u30b9\u30c8',
                                   width: 144,
                                   height: 160,
@@ -899,25 +702,25 @@
             a = e.style,
             l = e.children,
             n = e.text,
-            r = e.tag,
-            s = void 0 === r ? 'h3' : r,
+            s = e.tag,
+            r = void 0 === s ? 'h3' : s,
             i = e.textColor,
             c = void 0 === i ? P['palette-white'] : i,
             o = e.symbolColor,
             p = void 0 === o ? P['palette-white'] : o,
-            d = e['data-aos']
+            _ = e['data-aos']
           return (0, v.jsxs)('header', {
             className: x()(P.component, t),
-            'data-aos': d,
+            'data-aos': _,
             style: a,
             children: [
-              (0, v.jsx)(N.Z, {
+              (0, v.jsx)(w.Z, {
                 className: x()(P.component__symbol),
                 primaryColor: 'gradient' !== p ? p : P['palette-deepblue'],
                 shadowColor: 'gradient' !== p ? p : P['palette-deepblue'],
                 gradient: 'gradient' === p,
               }),
-              (0, v.jsx)(s, {
+              (0, v.jsx)(r, {
                 className: P.component__title,
                 style: { '--text-color': c },
                 children: n,
@@ -930,10 +733,10 @@
         U = a(84305),
         M =
           '/_next/static/image/src/images/top/img-service-pc.d06564d0456f997f06f1715d8eed0ca3.png',
-        D =
+        T =
           '/_next/static/image/src/images/top/img-service-sp.08b84486b806d82d5fbc97612b109457.png',
-        V = a(41901)
-      function L(e, t) {
+        D = a(41901)
+      function V(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e)
@@ -945,16 +748,16 @@
         }
         return a
       }
-      function T(e) {
+      function B(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? L(Object(a), !0).forEach(function (t) {
+            ? V(Object(a), !0).forEach(function (t) {
                 ;(0, E.Z)(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : L(Object(a)).forEach(function (t) {
+            : V(Object(a)).forEach(function (t) {
                 Object.defineProperty(
                   e,
                   t,
@@ -964,7 +767,7 @@
         }
         return e
       }
-      var Z = function (e) {
+      var W = function (e) {
           var t = e.className,
             a = e.style,
             l = { text: 'SERVICE', 'data-aos': 'fade-up' }
@@ -989,8 +792,8 @@
                     }),
                     (0, v.jsx)(
                       I,
-                      T(
-                        T(
+                      B(
+                        B(
                           {
                             className: x()(
                               U.component__header,
@@ -1000,7 +803,7 @@
                             symbolColor: 'gradient',
                             textColor: U['palette-deepblue'],
                           },
-                          T({}, l)
+                          B({}, l)
                         ),
                         {},
                         {
@@ -1017,8 +820,8 @@
                     ),
                     (0, v.jsx)(
                       I,
-                      T(
-                        T(
+                      B(
+                        B(
                           {
                             className: x()(
                               U.component__header,
@@ -1028,7 +831,7 @@
                             symbolColor: U['palette-white'],
                             textColor: U['palette-white'],
                           },
-                          T({}, l)
+                          B({}, l)
                         ),
                         {},
                         {
@@ -1093,7 +896,7 @@
                             (0, v.jsx)('div', {
                               className: U['item__button-wrap'],
                               children: (0, v.jsx)(F.b, {
-                                href: V.V.contract_development.$url(),
+                                href: D.V.contract_development.$url(),
                                 className: U.item__button,
                                 icon: !0,
                                 children:
@@ -1145,7 +948,7 @@
                             (0, v.jsx)('div', {
                               className: U['item__button-wrap'],
                               children: (0, v.jsx)(F.b, {
-                                href: V.V.ses.$url(),
+                                href: D.V.ses.$url(),
                                 className: U.item__button,
                                 icon: !0,
                                 children:
@@ -1171,7 +974,7 @@
               (0, v.jsx)('div', {
                 className: x()(U.component__image, 'tablet:hidden'),
                 children: (0, v.jsx)(f.E, {
-                  src: D,
+                  src: T,
                   alt: '\u5171\u5275\u3059\u308b\u53d7\u8a17\u958b\u767a\u306e\u30a4\u30e1\u30fc\u30b8',
                   width: '100%',
                   placeholder: 'blur',
@@ -1180,8 +983,8 @@
             ],
           })
         },
-        W = a(78081)
-      function B(e, t) {
+        R = a(78081)
+      function L(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(e)
@@ -1193,16 +996,16 @@
         }
         return a
       }
-      function R(e) {
+      function Z(e) {
         for (var t = 1; t < arguments.length; t++) {
           var a = null != arguments[t] ? arguments[t] : {}
           t % 2
-            ? B(Object(a), !0).forEach(function (t) {
+            ? L(Object(a), !0).forEach(function (t) {
                 ;(0, E.Z)(e, t, a[t])
               })
             : Object.getOwnPropertyDescriptors
             ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a))
-            : B(Object(a)).forEach(function (t) {
+            : L(Object(a)).forEach(function (t) {
                 Object.defineProperty(
                   e,
                   t,
@@ -1229,9 +1032,9 @@
               (0, v.jsx)(
                 'div',
                 {
-                  className: W.item__content,
+                  className: R.item__content,
                   children: (0, v.jsxs)('p', {
-                    className: W.item__text,
+                    className: R.item__text,
                     children: [
                       'IT\u3067',
                       (0, v.jsx)('br', {
@@ -1263,9 +1066,9 @@
               (0, v.jsx)(
                 'div',
                 {
-                  className: W.item__content,
+                  className: R.item__content,
                   children: (0, v.jsxs)('p', {
-                    className: W.item__text,
+                    className: R.item__text,
                     children: [
                       'IT\u6295\u8cc7\u306b\u5bfe\u3059\u308b',
                       (0, v.jsx)('br', { className: 'tablet:hidden' }),
@@ -1295,15 +1098,15 @@
               (0, v.jsxs)(
                 'div',
                 {
-                  className: W.item__content,
+                  className: R.item__content,
                   children: [
                     (0, v.jsx)('p', {
-                      className: W.item__text,
+                      className: R.item__text,
                       children:
                         '\u5171\u60f3\u300c\u5171\u306b\u60f3\u3046\u300d',
                     }),
                     (0, v.jsxs)('p', {
-                      className: W.item__description,
+                      className: R.item__description,
                       children: [
                         '\u304a\u5ba2\u69d8\u304c\u8003\u3048\u308b\u672a\u6765\u3001\u30d7\u30ed\u30c0\u30af\u30c8\u3092\u4e16\u306b\u51fa\u3057\u305f',
                         (0, v.jsx)('br', {
@@ -1319,15 +1122,15 @@
               (0, v.jsxs)(
                 'div',
                 {
-                  className: W.item__content,
+                  className: R.item__content,
                   children: [
                     (0, v.jsx)('p', {
-                      className: W.item__text,
+                      className: R.item__text,
                       children:
                         '\u5171\u5275\u300c\u5171\u306b\u5275\u308b\u300d',
                     }),
                     (0, v.jsxs)('p', {
-                      className: W.item__description,
+                      className: R.item__description,
                       children: [
                         '\u304a\u5ba2\u69d8\u304c\u793e\u4f1a\u306b\u63d0\u4f9b\u3059\u308b\u4fa1\u5024\u3092\u3001',
                         (0, v.jsx)('br', {}),
@@ -1341,15 +1144,15 @@
               (0, v.jsxs)(
                 'div',
                 {
-                  className: W.item__content,
+                  className: R.item__content,
                   children: [
                     (0, v.jsx)('p', {
-                      className: W.item__text,
+                      className: R.item__text,
                       children:
                         '\u5171\u8d70\u300c\u5171\u306b\u8d70\u308b\u300d',
                     }),
                     (0, v.jsxs)('p', {
-                      className: W.item__description,
+                      className: R.item__description,
                       children: [
                         '\u5909\u5316\u306e\u6fc0\u3057\u3044\u6642\u4ee3\u306b\u98f2\u307e\u308c\u308b\u3053\u3068\u306a\u304f\u3001',
                         (0, v.jsx)('br', {
@@ -1370,36 +1173,36 @@
             a = e.style
           return (0, v.jsx)('div', {
             id: 'mission',
-            className: x()(W.component, t),
+            className: x()(R.component, t),
             style: a,
             children: (0, v.jsx)('div', {
               className: 'l-wrap',
               children: (0, v.jsxs)('div', {
-                className: x()('l-inner', W.component__inner),
+                className: x()('l-inner', R.component__inner),
                 children: [
                   (0, v.jsx)(k.D, {
                     className: x()(
-                      W['component__column-header'],
+                      R['component__column-header'],
                       'hidden tablet:block'
                     ),
                     texts: {
                       en: 'Service Mission',
                       ja: '\u30b0\u30ed\u30fc\u30a4\u30f3\u30b0\u30a2\u30a4\u30e9\u30f3\u30ba\u306e\u30dd\u30ea\u30b7\u30fc',
                     },
-                    textColor: W['palette-deepblue'],
-                    borderColor: W['palette-deepblue'],
+                    textColor: R['palette-deepblue'],
+                    borderColor: R['palette-deepblue'],
                   }),
                   (0, v.jsx)(I, {
-                    className: W.component__header,
+                    className: R.component__header,
                     text: 'SERVICE MISSION',
                     symbolColor: 'gradient',
-                    textColor: W['palette-deepblue'],
+                    textColor: R['palette-deepblue'],
                     'data-aos': 'fade-up',
                   }),
                   (0, v.jsxs)('svg', {
                     width: '0',
                     height: '0',
-                    className: W.svg,
+                    className: R.svg,
                     children: [
                       (0, v.jsxs)('linearGradient', {
                         id: 'gradient-mission',
@@ -1410,15 +1213,15 @@
                         children: [
                           (0, v.jsx)('stop', {
                             offset: '0%',
-                            stopColor: W['palette-deepblue'],
+                            stopColor: R['palette-deepblue'],
                           }),
                           (0, v.jsx)('stop', {
                             offset: '50%',
-                            stopColor: W['palette-emeraldgreen'],
+                            stopColor: R['palette-emeraldgreen'],
                           }),
                           (0, v.jsx)('stop', {
                             offset: '100%',
-                            stopColor: W['palette-pastelgreen'],
+                            stopColor: R['palette-pastelgreen'],
                           }),
                         ],
                       }),
@@ -1435,7 +1238,7 @@
                     ],
                   }),
                   (0, v.jsx)('ul', {
-                    className: W.component__list,
+                    className: R.component__list,
                     children: H.map(function (e) {
                       var t = e.title,
                         a = e.image,
@@ -1443,17 +1246,17 @@
                       return (0, v.jsxs)(
                         'li',
                         {
-                          className: x()(W.component__item, W.item),
+                          className: x()(R.component__item, R.item),
                           'data-aos': 'fade-up',
                           children: [
                             (0, v.jsxs)('div', {
-                              className: W.item__inner,
+                              className: R.item__inner,
                               children: [
                                 (0, v.jsxs)('header', {
-                                  className: W.item__header,
+                                  className: R.item__header,
                                   children: [
                                     (0, v.jsx)('svg', {
-                                      className: W.item__svg,
+                                      className: R.item__svg,
                                       viewBox: '0 0 100 100',
                                       children: (0, v.jsx)('circle', {
                                         cx: '50',
@@ -1464,13 +1267,13 @@
                                       }),
                                     }),
                                     (0, v.jsx)('h4', {
-                                      className: W.item__title,
+                                      className: R.item__title,
                                       children: t,
                                     }),
                                   ],
                                 }),
                                 (0, v.jsx)('div', {
-                                  className: W.item__contents,
+                                  className: R.item__contents,
                                   children: l.map(function (e) {
                                     return e
                                   }),
@@ -1478,11 +1281,11 @@
                               ],
                             }),
                             (0, v.jsx)('div', {
-                              className: W.item__image,
+                              className: R.item__image,
                               children: (0, v.jsx)(
                                 f.E,
-                                R(
-                                  R(
+                                Z(
+                                  Z(
                                     {
                                       alt: ''.concat(
                                         t,
@@ -1490,7 +1293,7 @@
                                       ),
                                       placeholder: 'blur',
                                     },
-                                    R({}, a)
+                                    Z({}, a)
                                   ),
                                   {},
                                   { src: a.src.src }
@@ -1508,8 +1311,8 @@
             }),
           })
         },
-        G = a(13195),
-        q = [
+        q = a(13195),
+        G = [
           {
             label: '\u4f1a\u793e\u540d',
             text: '\u682a\u5f0f\u4f1a\u793e\u30b0\u30ed\u30fc\u30a4\u30f3\u30b0\u30a2\u30a4\u30e9\u30f3\u30ba',
@@ -1537,31 +1340,31 @@
             a = e.style
           return (0, v.jsx)('div', {
             id: 'company',
-            className: x()(G.component, t),
+            className: x()(q.component, t),
             style: a,
             children: (0, v.jsx)('div', {
               className: 'l-wrap',
               children: (0, v.jsxs)('div', {
-                className: x()('l-inner', G.component__inner),
+                className: x()('l-inner', q.component__inner),
                 children: [
                   (0, v.jsx)(k.D, {
                     className: x()(
-                      G['component__column-header'],
+                      q['component__column-header'],
                       'hidden tablet:block'
                     ),
                     texts: { en: 'Company', ja: '\u4f1a\u793e\u6982\u8981' },
-                    textColor: G['palette-deepblue'],
-                    borderColor: G['palette-deepblue'],
+                    textColor: q['palette-deepblue'],
+                    borderColor: q['palette-deepblue'],
                   }),
                   (0, v.jsx)(I, {
-                    className: G.component__header,
+                    className: q.component__header,
                     text: 'COMPANY',
                     symbolColor: 'gradient',
-                    textColor: G['palette-deepblue'],
+                    textColor: q['palette-deepblue'],
                     'data-aos': 'fade-up',
                   }),
                   (0, v.jsx)('div', {
-                    className: G.component__map,
+                    className: q.component__map,
                     'data-aos': 'fade-up',
                     children: (0, v.jsx)('iframe', {
                       src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.51387623262!2d139.89392581525823!3d35.664346880198224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d3fa682b8fd%3A0xc64b91f80bf68808!2z5qCq5byP5Lya56S-44Om44Oh44Op44Oc!5e0!3m2!1sja!2sjp!4v1638179648047!5m2!1sja!2sjp',
@@ -1569,13 +1372,13 @@
                     }),
                   }),
                   (0, v.jsx)('div', {
-                    className: G.component__list,
+                    className: q.component__list,
                     'data-aos': 'fade-up',
-                    children: q.map(function (e) {
+                    children: G.map(function (e) {
                       var t = e.label,
                         a = e.text
                       return (0,
-                      v.jsxs)('dl', { className: x()(G.component__item, G.item), children: [(0, v.jsx)('dt', { className: G.item__label, dangerouslySetInnerHTML: { __html: t } }), (0, v.jsx)('dd', { className: G.item__body, dangerouslySetInnerHTML: { __html: a } })] }, t)
+                      v.jsxs)('dl', { className: x()(q.component__item, q.item), children: [(0, v.jsx)('dt', { className: q.item__label, dangerouslySetInnerHTML: { __html: t } }), (0, v.jsx)('dd', { className: q.item__body, dangerouslySetInnerHTML: { __html: a } })] }, t)
                     }),
                   }),
                 ],
@@ -1593,7 +1396,7 @@
         ae = a(4298),
         le = a(77678),
         ne = a(55234),
-        re = function (e) {
+        se = function (e) {
           var t = e.className,
             a = e.color,
             l = void 0 === a ? ne['palette-black'] : a,
@@ -1847,18 +1650,18 @@
             ],
           })
         },
-        se = a(73352),
+        re = a(73352),
         ie = function (e) {
           var t = e.className,
             a = e.style
           return (0, v.jsx)('div', {
-            className: x()(se.component, t),
+            className: x()(re.component, t),
             style: a,
             children: (0, v.jsxs)('div', {
-              className: se.component__inner,
+              className: re.component__inner,
               children: [
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '\u30d7\u30e9\u30a4\u30d0\u30b7\u30fc\u30dd\u30ea\u30b7\u30fc',
                     (0, v.jsx)('br', {}),
@@ -1866,7 +1669,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '1 \u500b\u4eba\u60c5\u5831\u306e\u53ce\u96c6\u306b\u3064\u3044\u3066',
                     (0, v.jsx)('br', {}),
@@ -1874,7 +1677,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '\u30fb\u5f53\u793e\u3078\u306e\u304a\u554f\u3044\u5408\u308f\u305b\u6642',
                     (0, v.jsx)('br', {}),
@@ -1882,7 +1685,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '2 \u500b\u4eba\u60c5\u5831\u306e\u5229\u7528\u76ee\u7684\u306b\u3064\u3044\u3066',
                     (0, v.jsx)('br', {}),
@@ -1890,7 +1693,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '\u30fb\u304a\u5ba2\u69d8\u3078\u306e\u9023\u7d61\u306e\u305f\u3081',
                     (0, v.jsx)('br', {}),
@@ -1900,7 +1703,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '3 \u500b\u4eba\u60c5\u5831\u306e\u7b2c\u4e09\u8005\u3078\u306e\u63d0\u4f9b\u306b\u3064\u3044\u3066',
                     (0, v.jsx)('br', {}),
@@ -1910,7 +1713,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '\u30fb\u3054\u672c\u4eba\u306e\u540c\u610f\u304c\u3042\u308b\u5834\u5408',
                     (0, v.jsx)('br', {}),
@@ -1920,7 +1723,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '4 \u500b\u4eba\u60c5\u5831\u306e\u958b\u793a\u3001\u8a02\u6b63\u7b49\u306b\u3064\u3044\u3066',
                     (0, v.jsx)('br', {}),
@@ -1928,7 +1731,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '5 \u82e6\u60c5\u3084\u76f8\u8ac7\u3078\u306e\u5bfe\u5fdc\u3068\u5b89\u5168\u7ba1\u7406\u63aa\u7f6e\u306b\u3064\u3044\u3066',
                     (0, v.jsx)('br', {}),
@@ -1938,7 +1741,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '6 \u30d7\u30e9\u30a4\u30d0\u30b7\u30fc\u30dd\u30ea\u30b7\u30fc\u306e\u5909\u66f4',
                     (0, v.jsx)('br', {}),
@@ -1946,7 +1749,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '7 \u5f53\u793e\u540d\u79f0\u53ca\u3073\u4ee3\u8868\u8005\u6c0f\u540d',
                     (0, v.jsx)('br', {}),
@@ -1958,7 +1761,7 @@
                   ],
                 }),
                 (0, v.jsxs)('p', {
-                  className: se.component__text,
+                  className: re.component__text,
                   children: [
                     '8 \u554f\u3044\u5408\u308f\u305b\u7a93\u53e3',
                     (0, v.jsx)('br', {}),
@@ -1972,8 +1775,8 @@
         ce = a(50604),
         oe = a(34155),
         pe = ['match'],
-        de = ['label', 'value'],
-        _e = ['formrunId']
+        _e = ['label', 'value'],
+        de = ['formrunId']
       function me(e, t) {
         var a = Object.keys(e)
         if (Object.getOwnPropertySymbols) {
@@ -2014,7 +1817,7 @@
             i = void 0 === n ? 'post' : n,
             c = e.privacyPolicy,
             o = e.reCaptcha,
-            _ = void 0 !== o && o,
+            d = void 0 !== o && o,
             m = e.onSubmit,
             u = e.className,
             b = e.style,
@@ -2023,17 +1826,17 @@
             g = f.register,
             j = f.trigger,
             y = f.getValues,
-            w = f.reset,
-            N = f.setValue,
+            N = f.reset,
+            w = f.setValue,
             k = f.formState.errors,
-            A = (0, r.useState)(!1),
-            O = A[0],
-            C = A[1],
-            S = (0, r.useState)(!1),
+            A = (0, s.useState)(!1),
+            C = A[0],
+            O = A[1],
+            S = (0, s.useState)(!1),
             E = S[0],
             P = S[1],
-            I = (0, p.C)(d.WS),
-            U = (0, r.useRef)(null)
+            I = (0, p.C)(_.WS),
+            U = (0, s.useRef)(null)
           function M() {
             return (M = (0, J.Z)(
               $().mark(function e(l) {
@@ -2044,7 +1847,7 @@
                       case 0:
                         return (
                           (n = [].concat((0, Y.Z)(a), [
-                            _ ? { name: 're-captcha' } : {},
+                            d ? { name: 're-captcha' } : {},
                           ])),
                           (e.next = 3),
                           Promise.all(
@@ -2062,13 +1865,13 @@
                           e.next = 18
                           break
                         }
-                        if ((C(!0), !m)) {
+                        if ((O(!0), !m)) {
                           e.next = 15
                           break
                         }
                         return (e.next = 9), m(l, y())
                       case 9:
-                        return C(!1), P(!0), w(), e.abrupt('return', !1)
+                        return O(!1), P(!0), N(), e.abrupt('return', !1)
                       case 15:
                         return e.abrupt('return', !0)
                       case 16:
@@ -2076,7 +1879,7 @@
                         break
                       case 18:
                         return (
-                          s.OK.scrollTo(t, {
+                          r.OK.scrollTo(t, {
                             duration: 500,
                             smooth: !0,
                             offset: -I,
@@ -2092,7 +1895,7 @@
               })
             )).apply(this, arguments)
           }
-          function D(e) {
+          function T(e) {
             if (e) {
               var t = e.match,
                 a = ue({}, (0, Q.Z)(e, pe))
@@ -2106,17 +1909,17 @@
             }
           }
           return (
-            (0, r.useEffect)(
+            (0, s.useEffect)(
               function () {
-                _ && g('re-captcha', { required: !0 })
+                d && g('re-captcha', { required: !0 })
               },
-              [_]
+              [d]
             ),
             (0, v.jsxs)('div', {
               className: x()(ce.component, u, E && ce['is-complete']),
               'data-aos': h,
               children: [
-                _ &&
+                d &&
                   (0, v.jsx)(ae.default, {
                     src: 'https://www.google.com/recaptcha/api.js',
                   }),
@@ -2132,10 +1935,10 @@
                     action: l,
                     method: i,
                     children: [
-                      O &&
+                      C &&
                         (0, v.jsx)('div', {
                           className: ce.loading,
-                          children: (0, v.jsx)(re, {
+                          children: (0, v.jsx)(se, {
                             className: ce.loading__icon,
                             color: ce['palette-deepblue'],
                           }),
@@ -2146,8 +1949,8 @@
                           var a,
                             l = e.name,
                             n = e.type,
-                            r = e.label,
-                            s = e.attributes,
+                            s = e.label,
+                            r = e.attributes,
                             i = e.validation,
                             c = ''.concat(l, '-').concat(t)
                           return (0, v.jsxs)(
@@ -2161,7 +1964,7 @@
                                   children: [
                                     (0, v.jsx)('span', {
                                       className: ce.item__label,
-                                      children: r,
+                                      children: s,
                                     }),
                                     (null === i || void 0 === i
                                       ? void 0
@@ -2178,7 +1981,7 @@
                                     (function () {
                                       switch (n) {
                                         case 'selectbox':
-                                          var t = s
+                                          var t = r
                                           return (0, v.jsxs)('div', {
                                             className: ce['item__select-wrap'],
                                             children: [
@@ -2186,7 +1989,7 @@
                                                 'select',
                                                 ue(
                                                   ue(
-                                                    ue({ id: c }, g(l, D(i))),
+                                                    ue({ id: c }, g(l, T(i))),
                                                     ue({}, t)
                                                   ),
                                                   {},
@@ -2195,7 +1998,7 @@
                                                       function (e) {
                                                         var t = e.label,
                                                           a = e.value,
-                                                          l = (0, Q.Z)(e, de)
+                                                          l = (0, Q.Z)(e, _e)
                                                         return (0, v.jsx)(
                                                           'option',
                                                           ue(
@@ -2222,21 +2025,21 @@
                                             ],
                                           })
                                         case 'textarea':
-                                          var a = s
+                                          var a = r
                                           return (0, v.jsx)(
                                             'textarea',
                                             ue(
-                                              ue({ id: c }, g(l, D(i))),
+                                              ue({ id: c }, g(l, T(i))),
                                               ue({}, a)
                                             )
                                           )
                                         default:
-                                          var r = s
+                                          var s = r
                                           return (0, v.jsx)(
                                             'input',
                                             ue(
-                                              ue({ id: c }, g(l, D(i))),
-                                              ue({}, r)
+                                              ue({ id: c }, g(l, T(i))),
+                                              ue({}, s)
                                             )
                                           )
                                       }
@@ -2329,20 +2132,20 @@
                         ],
                       }),
                       be &&
-                        _ &&
+                        d &&
                         (0, v.jsxs)('div', {
                           className: x()(ce['component__re-captcha']),
                           children: [
                             (0, v.jsx)(le.Z, {
                               sitekey: be,
                               onChange: function (e) {
-                                e && N('re-captcha', e)
+                                e && w('re-captcha', e)
                               },
                               onExpired: function () {
-                                N('re-captcha', '')
+                                w('re-captcha', '')
                               },
                               onErrored: function () {
-                                N('re-captcha', '')
+                                w('re-captcha', '')
                               },
                             }),
                             k['re-captcha'] &&
@@ -2369,18 +2172,18 @@
         },
         fe = function (e) {
           var t = e.formrunId,
-            a = (0, Q.Z)(e, _e),
-            l = (0, r.useState)(!1),
+            a = (0, Q.Z)(e, de),
+            l = (0, s.useState)(!1),
             n = l[0],
-            s = l[1],
-            i = (0, r.useState)(!1),
+            r = l[1],
+            i = (0, s.useState)(!1),
             c = i[0],
             o = i[1]
           function p() {
-            window.Formrun._reset(), window.Formrun.init('.formrun'), s(!0)
+            window.Formrun._reset(), window.Formrun.init('.formrun'), r(!0)
           }
           return (
-            (0, r.useEffect)(function () {
+            (0, s.useEffect)(function () {
               !(function () {
                 if (window.Formrun) return p(), !1
                 new Promise(function (e, t) {
@@ -2435,7 +2238,7 @@
                     !n &&
                       (0, v.jsx)('div', {
                         className: ce.loading,
-                        children: (0, v.jsx)(re, {
+                        children: (0, v.jsx)(se, {
                           className: ce.loading__icon,
                           color: ce['palette-deepblue'],
                         }),
@@ -2465,7 +2268,7 @@
           url: /^(https?)(:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:\@&=+\$,%#]+)$/,
         },
         ve = a(34155).env.NEXT_PUBLIC_FORMRUN_ID,
-        we = [
+        Ne = [
           {
             name: 'company-name',
             label: '\u4f1a\u793e\u540d',
@@ -2547,7 +2350,7 @@
             },
           },
         ],
-        Ne = function (e) {
+        we = function (e) {
           var t = e.className,
             a = e.style,
             l = e.complete
@@ -2596,7 +2399,7 @@
                     !l &&
                     (0, v.jsx)(fe, {
                       id: 'formrun',
-                      items: we,
+                      items: Ne,
                       reCaptcha: !0,
                       privacyPolicy: { type: 'block' },
                       formrunId: ve,
@@ -2616,7 +2419,7 @@
                   var t
                   return null !== (t = e.split('#')[1]) && void 0 !== t ? t : ''
                 })(e.asPath),
-                (0, r.useCallback)(function (t) {
+                (0, s.useCallback)(function (t) {
                   e.replace({ hash: t }, void 0, { shallow: !0 })
                 }, []),
               ]
@@ -2624,17 +2427,17 @@
             t = (0, l.Z)(e, 2),
             a = t[0],
             f = t[1],
-            g = (0, p.C)(d.WS),
+            g = (0, p.C)(_.WS),
             x = (0, n.useRouter)(),
             j = (0, o.F)(),
-            y = (0, r.useState)(),
-            N = y[0],
+            y = (0, s.useState)(),
+            w = y[0],
             k = y[1],
             A = (0, i.YD)(ke.P9),
-            O = A.ref,
-            C = A.inView
+            C = A.ref,
+            O = A.inView
           return (
-            (0, r.useEffect)(
+            (0, s.useEffect)(
               function () {
                 var e = { duration: 500, smooth: !0, offset: -g },
                   t = x.query.complete
@@ -2642,42 +2445,42 @@
                   'true' === t &&
                   ('' !== document.referrer &&
                   document.referrer.indexOf(window.location.origin) > -1
-                    ? (s.OK.scrollTo('contact', e),
+                    ? (r.OK.scrollTo('contact', e),
                       k(!0),
                       history.replaceState('', '', '/'))
                     : x.replace('/')),
-                  a && (s.OK.scrollTo(a, e), f(''))
+                  a && (r.OK.scrollTo(a, e), f(''))
               },
               [x.query]
             ),
             (0, v.jsxs)('div', {
               className: 'l-page',
               children: [
-                (0, v.jsx)(_.H, {
+                (0, v.jsx)(d.H, {
                   title:
                     '\u5e45\u5e83\u3044IT\u4e8b\u696d\u3067\u4fa1\u5024\u3092\u5171\u306b\u5275\u308a\u7d9a\u3051\u308b',
                   url: ke.RH.URL,
                 }),
-                (0, v.jsx)(m.h, { overBorder: C }),
+                (0, v.jsx)(m.h, { overBorder: O }),
                 (0, v.jsxs)(c.Parallax, {
                   strength: 'pc' === j ? 7e3 : 4500,
                   contentClassName: 'l-gradient',
                   className: 'l-parallax is-top',
                   children: [
-                    (0, v.jsx)(w, {}),
+                    (0, v.jsx)(N, {}),
                     (0, v.jsx)(c.Background, {
                       className: 'l-parallax__background',
                       children: (0, v.jsx)(h.q, {}),
                     }),
                     (0, v.jsxs)('main', {
                       className: 'l-main',
-                      ref: O,
+                      ref: C,
                       children: [
                         (0, v.jsx)(S, {}),
-                        (0, v.jsx)(Z, {}),
+                        (0, v.jsx)(W, {}),
                         (0, v.jsx)(z, {}),
                         (0, v.jsx)(K, {}),
-                        (0, v.jsx)(Ne, { complete: N }),
+                        (0, v.jsx)(we, { complete: w }),
                         (0, v.jsx)(b.I, {}),
                       ],
                     }),
@@ -3099,44 +2902,6 @@
         fadeIn: 'Loading_fadeIn__1tR8L',
       }
     },
-    89819: function (e) {
-      e.exports = {
-        'palette-white': '#fff',
-        'palette-whiteshadow': 'rgba(255,255,255,.2)',
-        'palette-black': '#000',
-        'palette-mintblue': '#00afc4',
-        'palette-gray': '#6a6c77',
-        'palette-smokegray': '#ccc',
-        'palette-lightgray': '#e5e5e5',
-        'palette-deepgray': '#999',
-        'palette-lightblack': '#333',
-        'palette-deepblue': '#1e2888',
-        'palette-emeraldgreen': '#06717e',
-        'palette-pastelgreen': '#8eccc3',
-        'palette-vividgreen': '#05ceb9',
-        'palette-lemon': '#eceda2',
-        'palette-yellow': '#ead966',
-        'palette-smokegreen': '#baecca',
-        'palette-borderblue': '#1f4bbc',
-        'palette-dirtyblue': '#5a7993',
-        'palette-bordergreen': '#076e7f',
-        'palette-blueblack': '#000722',
-        'palette-lightgreen': '#c4e4df',
-        'palette-red': '#c00',
-        'palette-list1': '#578fa8',
-        'palette-list2': '#81c0c5',
-        'palette-list3': '#e4d9ab',
-        'palette-list4': '#eea65e',
-        'palette-step1': '#9ed442',
-        'palette-step2': '#43d1a1',
-        'palette-step3': '#40d3e2',
-        'palette-step4': '#41a7e1',
-        'palette-step5': '#4282cc',
-        showWord: 'Logo_showWord__3waRa',
-        fadeUp: 'Logo_fadeUp__2MVuW',
-        fadeIn: 'Logo_fadeIn__382HH',
-      }
-    },
     37699: function (e) {
       e.exports = {
         'palette-white': '#fff',
@@ -3483,7 +3248,7 @@
     },
   },
   function (e) {
-    e.O(0, [57, 924, 798, 495, 774, 888, 179], function () {
+    e.O(0, [57, 924, 844, 495, 774, 888, 179], function () {
       return (t = 45301), e((e.s = t))
       var t
     })
