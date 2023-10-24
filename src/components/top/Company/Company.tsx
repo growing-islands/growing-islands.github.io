@@ -31,7 +31,7 @@ const LIST_ITEMS: ListItem[] = [
   },
   {
     label: '設立',
-    text: '2015年12月',
+    text: '2022年12月',
   },
   {
     label: '取引銀行',
